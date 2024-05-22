@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media(max-width: 767px){
+    .btn{
+        margin-right: 96px;
+    }
+}
+@media(max-width: 426px){
+    .btn{
+        margin-right: 50px;
+    }
+}
+@media(max-width: 380px){
+    .btn{
+        margin-right: 0px;
+    }
+}

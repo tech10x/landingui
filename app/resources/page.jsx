@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resources = () => {
     return (
-        <div>Resources Page</div>
+        <main className='my-6'>Resources Page</main>
     )
 }
 
