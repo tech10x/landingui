@@ -83,7 +83,7 @@ const NavigationMenu = () => {
                     <div className='flex justify-between items-center sm:mr-1'>
                         {/* Rendering logo  */}
                         <Link href="/" className={'text-2xl font-bold text-black flex items-center gap-2'}>
-                            <Image src={brandLogo} alt="Tech10x logo" height={60} width={60} className={'inline-block'} />
+                            <Image src={brandLogo} alt="Tech10x logo" height={60} width={60} className={'inline-block'} loading="eager" priority={true} />
                             Tech10x</Link>
 
                         {/* Nav item for large device  */}
@@ -107,9 +107,9 @@ const NavigationMenu = () => {
                                 {
                                     isMenuOpen
                                         ?
-                                        <Image src={xmarkIcon} alt="close-menu" height={40} width={40} />
+                                        <Image src={xmarkIcon} alt="close-menu" height={40} width={40} loading="eager" priority={true} />
                                         :
-                                        <Image src={toggleIcon} alt="open-menu" height={40} width={40} />
+                                        <Image src={toggleIcon} alt="open-menu" height={40} width={40} loading="eager" priority={true} />
                                 }
                             </button>
                         </div>
