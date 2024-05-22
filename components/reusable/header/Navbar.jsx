@@ -77,13 +77,13 @@ const NavigationMenu = () => {
     return (
         <>
             {/* Navbar body  */}
-            <header id='navBar' className={`w-full  fixed top-0 left-0 right-0 transition-all ease-in duration-300 ${isMenuOpen ? 'bg-gray-100' : 'bg-transparent'}`}>
-                <nav className={`py-4 lg:px-24 px-4 ${isSticky ? 'sticky top-0 left-0 right-0 bg-gray-100' : ''}`}>
+            <header id='navBar' className={`w-full  fixed top-0 left-0 right-0 ${isMenuOpen ? 'bg-white' : 'bg-transparent'}`}>
+                <nav className={`py-4 lg:px-24 px-4 ${isSticky ? 'sticky top-0 left-0 right-0 bg-white' : ''}`}>
 
                     <div className='flex justify-between items-center sm:mr-1'>
                         {/* Rendering logo  */}
                         <Link href="/" className={'text-2xl font-bold text-black flex items-center gap-2'}>
-                            <Image src={brandLogo} alt="Book-Ocean" height={60} width={60} className={'inline-block'} />
+                            <Image src={brandLogo} alt="Tech10x logo" height={60} width={60} className={'inline-block'} />
                             Tech10x</Link>
 
                         {/* Nav item for large device  */}
@@ -115,7 +115,7 @@ const NavigationMenu = () => {
                         </div>
 
                         {/* Navigation for small devices */}
-                        <div className={`space-y-4 px-4 mt-12 py-7 bg-gray-100 
+                        <div className={`space-y-4 px-4 mt-12 py-7 bg-white 
                        ${isMenuOpen ? 'block fixed top-5 right-0 left-0' : 'hidden'}`}>
 
 
