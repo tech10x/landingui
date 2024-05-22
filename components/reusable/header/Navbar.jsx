@@ -77,7 +77,7 @@ const NavigationMenu = () => {
     return (
         <>
             {/* Navbar body  */}
-            <header className='w-full bg-transparent fixed top-0 left-0 right-0 transition-all ease-in duration-300'>
+            <header className={`w-full  fixed top-0 left-0 right-0 transition-all ease-in duration-300 ${isMenuOpen ? 'bg-gray-100' : 'bg-transparent'}`}>
                 <nav className={`py-4 lg:px-24 px-4 ${isSticky ? 'sticky top-0 left-0 right-0 bg-gray-100' : ''}`}>
 
                     <div className='flex justify-between items-center sm:mr-1'>
@@ -115,35 +115,20 @@ const NavigationMenu = () => {
                         </div>
 
                         {/* Navigation for small devices */}
-                        {isSticky ?
-                            <div className={`space-y-4 px-4 mt-12 py-7 bg-gray-100 
+                        <div className={`space-y-4 px-4 mt-12 py-7 bg-gray-100 
                        ${isMenuOpen ? 'block fixed top-5 right-0 left-0' : 'hidden'}`}>
 
 
-                                {
-                                    navItems.map(({ link, path }) =>
-                                        <Link key={path} href={path}
-                                            className={`flex flex-col text-sm
+                            {
+                                navItems.map(({ link, path }) =>
+                                    <Link key={path} href={path}
+                                        className={`flex flex-col text-sm
                                 text-blue-800 uppercase cursor-pointer items-center
                                 hover:text-black font-bold`}>{link}</Link>
-                                    )
-                                }
+                                )
+                            }
 
-                            </div>
-                            :
-                            <div className={`space-y-4 px-4 mt-12 py-7 bg-transparent
-                                                ${isMenuOpen ? 'block fixed top-5 right-0 left-0' : 'hidden'}`}>
-
-                                {
-                                    navItems.map(({ link, path }) =>
-                                        <Link key={path} href={path}
-                                            className={`flex flex-col text-sm items-center
-                                                         text-blue-800 uppercase cursor-pointer
-                                                         hover:text-black font-bold`}>{link}</Link>
-                                    )
-                                }
-                            </div>
-                        }
+                        </div>
                     </div>
                 </nav>
             </header>
