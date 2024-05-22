@@ -3,7 +3,6 @@ import "./globals.css";
 import NavigationMenu from '@/components/reusable/header/Navbar';
 import Footer from '@/components/reusable/footer/Footer';
 
-
 const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',

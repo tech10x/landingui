@@ -1,10 +1,13 @@
 import React from 'react';
+import HomeBanner from '@/components/reusable/home-banner/HomeBanner';
 export default function Home() {
+
+
   return (
-    <main className='my-6'>
+    <>
 
-      Hi
+      <HomeBanner />
 
-    </main>
+    </>
   );
 }

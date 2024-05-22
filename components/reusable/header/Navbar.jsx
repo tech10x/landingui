@@ -77,12 +77,12 @@ const NavigationMenu = () => {
     return (
         <>
             {/* Navbar body  */}
-            <header className={`w-full  fixed top-0 left-0 right-0 transition-all ease-in duration-300 ${isMenuOpen ? 'bg-gray-100' : 'bg-transparent'}`}>
+            <header id='navBar' className={`w-full  fixed top-0 left-0 right-0 transition-all ease-in duration-300 ${isMenuOpen ? 'bg-gray-100' : 'bg-transparent'}`}>
                 <nav className={`py-4 lg:px-24 px-4 ${isSticky ? 'sticky top-0 left-0 right-0 bg-gray-100' : ''}`}>
 
                     <div className='flex justify-between items-center sm:mr-1'>
                         {/* Rendering logo  */}
-                        <Link href="/" className={'text-xl font-bold text-blue-800 flex items-center gap-2'}>
+                        <Link href="/" className={'text-2xl font-bold text-black flex items-center gap-2'}>
                             <Image src={brandLogo} alt="Book-Ocean" height={60} width={60} className={'inline-block'} />
                             Tech10x</Link>
 
