@@ -25,8 +25,13 @@
 
 #mainContainer{
     background-image: url('../assets/images/Independent-image/Home-Banner-BG.webp');
-    repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
    
+}
+
+.link-active{
+    border-bottom: 3px solid rgb(0, 84, 145);
+    color: rgb(0, 84, 145);
 }
