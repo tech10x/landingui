@@ -1,0 +1,28 @@
+
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+.logos{
+    background: black;
+    overflow: hidden;
+    padding: 45px 0;
+}
+.logosSlides{
+    white-space: nowrap;
+    animation: 35s slide infinite linear;
+}
+.logosSlides:hover{
+    animation-play-state: paused;
+}
+.brandLogos{
+    display: inline-flex;
+    margin: 0 40px;
+}
