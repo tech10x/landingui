@@ -70,7 +70,7 @@ const NavigationMenu = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => {
-      window.addEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -82,14 +82,12 @@ const NavigationMenu = () => {
       {/* Navbar body  */}
       <header
         id="navBar"
-        className={`w-full  fixed top-0 left-0 right-0 ${
-          isMenuOpen ? "bg-white" : "bg-transparent"
-        }`}
+        className={`w-full  fixed top-0 left-0 right-0 ${isMenuOpen ? "bg-white" : "bg-transparent"
+          }`}
       >
         <nav
-          className={`py-4 lg:px-24 px-4 ${
-            isSticky ? "sticky top-0 left-0 right-0 bg-white" : ""
-          }`}
+          className={`py-4 lg:px-24 px-4 ${isSticky ? "sticky top-0 left-0 right-0 bg-white" : ""
+            }`}
         >
           <div className="flex justify-between items-center sm:mr-1">
             {/* Rendering logo  */}
@@ -119,9 +117,8 @@ const NavigationMenu = () => {
                   href={path}
                   className={`block text-sm align-center
                                  text-black uppercase cursor-pointer
-                                 hover:text-blue-800 font-bold ${
-                                   isActive(path) ? "link-active" : ""
-                                 }`}
+                                 hover:text-blue-800 font-bold ${isActive(path) ? "link-active" : ""
+                    }`}
                 >
                   {link}
                 </Link>
@@ -164,11 +161,10 @@ const NavigationMenu = () => {
             {/* Navigation for small devices */}
             <div
               className={`space-y-4 px-4 mt-12 py-7 bg-white 
-                       ${
-                         isMenuOpen
-                           ? "block fixed top-5 right-0 left-0"
-                           : "hidden"
-                       }`}
+                       ${isMenuOpen
+                  ? "block fixed top-5 right-0 left-0"
+                  : "hidden"
+                }`}
             >
               {navItems.map(({ link, path }) => (
                 <button
@@ -176,9 +172,8 @@ const NavigationMenu = () => {
                   onClick={closeToggle}
                   className={`block text-sm mx-auto
                                 text-blue-800 uppercase cursor-pointer items-center
-                                hover:text-black font-bold ${
-                                  isActive(path) ? "link-active" : ""
-                                }`}
+                                hover:text-black font-bold ${isActive(path) ? "link-active" : ""
+                    }`}
                 >
                   <Link href={path}>{link}</Link>
                 </button>
