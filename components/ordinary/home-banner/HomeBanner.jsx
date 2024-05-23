@@ -26,7 +26,7 @@ const HomeBanner = () => {
                             <p className='md:w-4/5 text-lg font-medium'>
                                 Launch your eye-catching online store with ease, attract and convert more customers than ever before.</p>
                             <div>
-                                <button className='bg-blue-700 px-14 py-2 text-white font-bold text-xl hover:bg-black transition-all ease-in duration-200 rounded'>Get Start</button>
+                                <button className='bg-blue-700 px-14 py-2 text-white font-bold text-xl hover:bg-black transition-all ease-in duration-200 rounded'>Get Started</button>
                             </div>
                         </div>
                         {/* Right Content  */}

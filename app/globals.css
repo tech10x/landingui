@@ -9,17 +9,17 @@
 
 @media(max-width: 767px){
     .btn{
-        margin-right: 96px;
+        display: none;
     }
 }
 @media(max-width: 426px){
     .btn{
-        margin-right: 50px;
+        display: none;
     }
 }
 @media(max-width: 380px){
     .btn{
-        margin-right: 0px;
+        display: none;
     }
 }
 
