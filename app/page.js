@@ -10,6 +10,7 @@ import manageBetterImg from '@/assets/images/Dedicated-Image/landing-page-hero-s
 import firstHeroBulletIcon from '@/assets/icons/bullet-purple-icon-removebg-preview.png';
 import secondHeroBulletIcon from '@/assets/icons/black-blue-bulltet-point.webp';
 import thridHeroBulletIcon from '@/assets/icons/green-bullet-point.png';
+import HeroHeading from '@/components/ordinary/hero-heading/HeroHeading';
 
 const Home = () => {
   return (
@@ -17,9 +18,9 @@ const Home = () => {
 
       <HomeBanner />
       <Marquee />
-      <div className='block mx-auto text-2xl font-bold w-3/4  mt-28 mb-20 text-center sm:text-4xl'>
-        Whether you’re a startup or an established business, here’s why Tech10x is your best choice
-      </div>
+
+      <HeroHeading content={"Whether you’re a startup or an established business, here’s why Tech10x is your best choice"} />
+
       <LeftHero referredImg={launchFastImg} title={"Launch Fast"}
         itemOne={"Fully responsive e-commerce website & mobile app."}
         itemTwo={"Loads 6X faster than existing solutions."}
