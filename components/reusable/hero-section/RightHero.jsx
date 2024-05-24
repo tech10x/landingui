@@ -1,17 +1,25 @@
-import React from 'react';
+'use client'
+import { React, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 
 
 const RightHero = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, itemFive, bulletPoint }) => {
+
+    useEffect(() => {
+        AOS.init()
+    }, []);
+
     return (
         <div>
-            <div className='px-4 lg:px-24 flex items-center'>
+            <div className='px-4 lg:px-0 flex items-center'>
                 <div className='flex w-full flex-col md:flex-row justify-around items-center gap-12 py-8 flex-col-reverse'>
 
 
                     {/* Left Content  */}
-                    <div className='xl:ml-28 2xl:mx-auto space-y-8 h-full'>
+                    <div className='xl:ml-28 2xl:mx-auto space-y-8 h-full sm:mx-24' data-aos="fade-right">
                         <h4 className='text-3xl font-bold'>{title}</h4>
                         <ul className='flex flex-col'>
 
@@ -45,7 +53,7 @@ const RightHero = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, 
 
 
                     {/* Right Content  */}
-                    <div className='md:w-2/4 lg:w-1/2 space-y-8 h-full'>
+                    <div className='md:w-2/4 lg:w-1/2 space-y-8 h-full' data-aos="fade-left">
                         <Image src={referredImg}
                             alt={title}
                             width={500}
