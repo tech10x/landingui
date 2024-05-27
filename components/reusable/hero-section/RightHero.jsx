@@ -19,7 +19,7 @@ const RightHero = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, 
 
 
                     {/* Left Content  */}
-                    <div className='xl:ml-28 2xl:mx-auto space-y-8 h-full sm:mx-24' data-aos="fade-right">
+                    <div className='xl:ml-28 2xl:mx-auto space-y-8 h-full sm:mx-24' data-aos="flip-right">
                         <h4 className='text-3xl font-bold'>{title}</h4>
                         <ul className='flex flex-col'>
 
@@ -53,7 +53,7 @@ const RightHero = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, 
 
 
                     {/* Right Content  */}
-                    <div className='md:w-2/4 lg:w-1/2 space-y-8 h-full' data-aos="fade-left">
+                    <div className='md:w-2/4 lg:w-1/2 space-y-8 h-full' data-aos="flip-left">
                         <Image src={referredImg}
                             alt={title}
                             width={500}

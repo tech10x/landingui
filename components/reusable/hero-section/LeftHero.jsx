@@ -18,7 +18,7 @@ const LeftHero = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, i
             <div className='px-4 lg:px-0 flex items-center'>
                 <div className='flex w-full flex-col md:flex-row justify-around items-center gap-12 py-8'>
                     {/* Left Content  */}
-                    <div className='xl:ml-28 2xl:mx-auto space-y-8 h-full' data-aos="fade-right">
+                    <div className='xl:ml-28 2xl:mx-auto space-y-8 h-full' data-aos="flip-right">
                         <Image src={referredImg}
                             alt={title}
                             width={500}
@@ -29,7 +29,7 @@ const LeftHero = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, i
                     </div>
                     {/* Right Content  */}
                     <div className='md:w-2/4 lg:w-1/2 space-y-8 h-full'
-                        data-aos="fade-left">
+                        data-aos="flip-left">
                         <h4 className='text-3xl font-bold'>{title}</h4>
                         <ul className='flex flex-col'>
 
