@@ -26,3 +26,12 @@
     display: inline-flex;
     margin: 0 40px;
 }
+
+@media screen and (max-width: 768px){
+    .brandLogos{
+        width: 120px;
+    }
+    .logos{
+     padding: 0px 0;
+    }
+}
