@@ -11,6 +11,7 @@ import thridHeroBulletIcon from '@/assets/icons/green-bullet-point.png';
 import HeroHeading from '@/components/ordinary/hero-heading/HeroHeading';
 import HeroLeft from '@/components/reusable/hero-section/HeroLeft';
 import HeroRight from '@/components/reusable/hero-section/HeroRight';
+import ServicesSec from '@/components/ordinary/services-section/ServicesSec';
 
 const Home = () => {
   return (
@@ -45,6 +46,8 @@ const Home = () => {
         itemFour={"In-depth business analytics."}
         itemFive={"Automate all tax calculations."}
         bulletPoint={thridHeroBulletIcon} />
+
+      <ServicesSec />
     </>
   )
 }

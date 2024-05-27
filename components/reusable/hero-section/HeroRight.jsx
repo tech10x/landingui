@@ -21,6 +21,8 @@ const HeroRight = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, 
                         <Image
                             alt={title}
                             src={referredImg}
+                            quality={70}
+                            loading="lazy"
                             className="absolute inset-0 h-full w-full object-cover"
                         />
                     </div>
