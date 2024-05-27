@@ -1,8 +1,6 @@
 import React from 'react';
 import HomeBanner from '@/components/ordinary/home-banner/HomeBanner.jsx';
 import Marquee from '@/components/ordinary/marquee/Marquee';
-import LeftHero from '@/components/reusable/hero-section/LeftHero';
-import RightHero from '@/components/reusable/hero-section/RightHero';
 import launchFastImg from '@/assets/images/Dedicated-Image/landing-page-hero-sec-img/launch-fast.svg';
 import scaleFasterImg from '@/assets/images/Dedicated-Image/landing-page-hero-sec-img/scale-faster.svg';
 import manageBetterImg from '@/assets/images/Dedicated-Image/landing-page-hero-sec-img/manage-better.svg';
@@ -11,6 +9,8 @@ import firstHeroBulletIcon from '@/assets/icons/bullet-purple-icon-removebg-prev
 import secondHeroBulletIcon from '@/assets/icons/black-blue-bulltet-point.webp';
 import thridHeroBulletIcon from '@/assets/icons/green-bullet-point.png';
 import HeroHeading from '@/components/ordinary/hero-heading/HeroHeading';
+import HeroLeft from '@/components/reusable/hero-section/HeroLeft';
+import HeroRight from '@/components/reusable/hero-section/HeroRight';
 
 const Home = () => {
   return (
@@ -21,7 +21,8 @@ const Home = () => {
 
       <HeroHeading content={"Whether you’re a startup or an established business, here’s why Tech10x is your best choice"} />
 
-      <LeftHero referredImg={launchFastImg} title={"Launch Fast"}
+
+      <HeroLeft referredImg={launchFastImg} title={"Launch Fast"}
         itemOne={"Fully responsive e-commerce website & mobile app."}
         itemTwo={"Loads 6X faster than existing solutions."}
         itemThree={"Upload/import products and inventory in bulk."}
@@ -29,8 +30,7 @@ const Home = () => {
         itemFive={"Easily customizable themes."}
         bulletPoint={firstHeroBulletIcon} />
 
-
-      <RightHero referredImg={scaleFasterImg} title={"Scale Faster"}
+      <HeroRight referredImg={scaleFasterImg} title={"Scale Faster"}
         itemOne={"Guaranteed 99.5% uptime for your store - We keep you open for business."}
         itemTwo={"60+ third party plugins."}
         itemThree={"Marketing tools and discounts to drive repeat orders."}
@@ -38,8 +38,7 @@ const Home = () => {
         itemFive={"Unlimited transactions, minimal transaction fees."}
         bulletPoint={secondHeroBulletIcon} />
 
-
-      <LeftHero referredImg={manageBetterImg} title={"Manage Better"}
+      <HeroLeft referredImg={manageBetterImg} title={"Manage Better"}
         itemOne={"Order tracking, invoicing and order reports."}
         itemTwo={"Bulk edit product prices, variants, inventory."}
         itemThree={"Manage global deliveries."}
