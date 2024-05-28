@@ -12,6 +12,8 @@ import HeroHeading from '@/components/ordinary/hero-heading/HeroHeading';
 import HeroLeft from '@/components/reusable/hero-section/HeroLeft';
 import HeroRight from '@/components/reusable/hero-section/HeroRight';
 import ServicesSec from '@/components/ordinary/services-section/ServicesSec';
+import SiteFunctionality from '@/components/ordinary/site-functionality/SiteFunctionality';
+
 
 const Home = () => {
   return (
@@ -48,6 +50,9 @@ const Home = () => {
         bulletPoint={thridHeroBulletIcon} />
 
       <ServicesSec />
+
+      <SiteFunctionality />
+      
     </>
   )
 }
