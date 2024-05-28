@@ -13,6 +13,7 @@ import HeroLeft from '@/components/reusable/hero-section/HeroLeft';
 import HeroRight from '@/components/reusable/hero-section/HeroRight';
 import ServicesSec from '@/components/ordinary/services-section/ServicesSec';
 import SiteFunctionality from '@/components/ordinary/site-functionality/SiteFunctionality';
+import Testimonial from '@/components/ordinary/testimonial/Testimonial';
 
 
 const Home = () => {
@@ -52,7 +53,9 @@ const Home = () => {
       <ServicesSec />
 
       <SiteFunctionality />
-      
+
+      <Testimonial />
+
     </>
   )
 }
