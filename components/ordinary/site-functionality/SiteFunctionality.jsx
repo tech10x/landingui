@@ -36,47 +36,47 @@ const SiteFunctionality = () => {
                <Image src={amazonReview} alt='amazon-review' width={200} height={200} />
             </div>
 
-            <div className='relative top-10 mx-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-up">
+            <div className='relative top-10 lg:mx-2 md:mx-1 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-up">
                <Image src={clarity} alt='clarity' width={200} height={200} />
             </div>
 
-            <div className='relative top-20 mx-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-up">
+            <div className='relative top-20 lg:mx-2 md:mx-1 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-up">
                <Image src={shopifyImporter} alt='shopify-importer' width={200} height={200} />
             </div>
 
-            <div className='relative top-10 mx-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-up">
+            <div className='relative top-10 lg:mx-2 md:mx-1 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-up">
                <Image src={facebook} alt='facebook' width={200} height={200} />
             </div>
 
-            <div className='relative top-2 mx-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-up">
+            <div className='relative top-2 lg:mx-2 md:mx-1 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-up">
                <Image src={googleAds} alt='google-ads' width={200} height={200} />
             </div>
 
-            <div className='relative bottom-5 mx-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-up">
+            <div className='relative bottom-5 lg:mx-2 md:mx-1 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-up">
                <Image src={googleAnalytic} alt='google-analytic' width={200} height={200} />
             </div>
 
-            <div className='relative top-2 mx-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
+            <div className='relative top-2 lg:mx-2 md:mx-1 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
                <Image src={googleMerchant} alt='google-merchant' width={200} height={200} />
             </div>
 
-            <div className='relative top-10 mx-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
+            <div className='relative top-10 lg:mx-2 md:mx-1 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
                <Image src={trusted} alt='trusted' width={200} height={200} />
             </div>
 
-            <div className='relative top-20 mx-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
+            <div className='relative top-20 lg:mx-2 md:mx-1 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
                <Image src={intercom} alt='intercom' width={200} height={200} />
             </div>
 
-            <div className='relative top-11 mx-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
+            <div className='relative top-11 lg:mx-2 md:mx-1 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
                <Image src={mailchimp} alt='mailchimp' width={200} height={200} />
             </div>
 
-            <div className='relative top-5 mx-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
+            <div className='relative top-5 lg:mx-2 md:mx-1 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
                <Image src={privy} alt='privy' width={200} height={200} />
             </div>
 
-            <div className='relative mx-2 bottom-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
+            <div className='relative lg:mx-2 md:mx-1 bottom-2 hover:rounded-md transition-transform hover:scale-110' data-aos="fade-down">
                <Image src={rtoOptimizer} alt='rto-optimizer' width={200} height={200} />
             </div>
          </div>
