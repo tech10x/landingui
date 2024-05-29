@@ -2,8 +2,8 @@ name = "tech10x"
 compatibility_date = "2024-05-24"
 
 [vars]
-DATABASE_URL = "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZmE3YmE1YWMtMDQ5Mi00ZWE1LWJiMjAtNmJkZmRjZjc5YWI2IiwidGVuYW50X2lkIjoiNzc1N2RkYTRjNjU3YmIwZjkyNzNmZGFlMThjOTVjMTMwM2JiNGI3NDQwNDU4ZTdiOWM4MGI1YTkyZWJiNjM3OCIsImludGVybmFsX3NlY3JldCI6ImE5MjRlNmUwLWIxNTItNDEwMi1iY2M1LTk5N2EwYjFiNDU2MiJ9.fLylldRD0K_eqrvXBGtPY1Qs9FgwTjoXNA9eJs4PCuI"
-JWT_SECRET = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+DATABASE_URL = ""
+JWT_SECRET = ""
 
 
 # R2_URL = "https://pub-96c5670691c8435283fb5dea0d94a7e8.r2.dev"
