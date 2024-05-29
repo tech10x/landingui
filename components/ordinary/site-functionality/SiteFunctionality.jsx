@@ -19,6 +19,7 @@ import rtoOptimizer from '@/assets/images/Dedicated-Image/site-functionality-img
 
 
 
+
 const SiteFunctionality = () => {
    useEffect(() => {
       AOS.init()
@@ -82,7 +83,7 @@ const SiteFunctionality = () => {
          </div>
 
          <div className='mt-36 flex justify-center'>
-            <button className='py-1 px-4 lg:py-2 lg:px-8 border-2 bg-white rounded-lg font-medium text-lg text-gray-500 shadow-slate-600 hover:rounded-md transition-transform hover:scale-110 hover:border-gray-400 focus:border-teal-400 '>Take a look</button>
+            <button className='py-1 px-4 lg:py-2 lg:px-8 border-2 bg-white rounded-lg font-medium text-lg text-gray-500 shadow-slate-600 hover:rounded-md transition-transform hover:scale-110 hover:border-gray-400 focus:border-teal-400'>Take a look</button>
          </div>
 
       </div>
