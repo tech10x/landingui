@@ -1,0 +1,25 @@
+name = "tech10x"
+compatibility_date = "2024-05-24"
+
+[vars]
+DATABASE_URL = "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZmE3YmE1YWMtMDQ5Mi00ZWE1LWJiMjAtNmJkZmRjZjc5YWI2IiwidGVuYW50X2lkIjoiNzc1N2RkYTRjNjU3YmIwZjkyNzNmZGFlMThjOTVjMTMwM2JiNGI3NDQwNDU4ZTdiOWM4MGI1YTkyZWJiNjM3OCIsImludGVybmFsX3NlY3JldCI6ImE5MjRlNmUwLWIxNTItNDEwMi1iY2M1LTk5N2EwYjFiNDU2MiJ9.fLylldRD0K_eqrvXBGtPY1Qs9FgwTjoXNA9eJs4PCuI"
+JWT_SECRET = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+
+
+# R2_URL = "https://pub-96c5670691c8435283fb5dea0d94a7e8.r2.dev"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "HONO_R2_UPLOAD_TECH10x"
+# bucket_name = "hono-r2-upload-tech10x"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
