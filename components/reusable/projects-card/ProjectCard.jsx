@@ -23,7 +23,7 @@ const ProjectCard = ({ imageSource, title, siteUrl }) => {
 
             </article>
             <div className="relative bg-white rounded-b-lg">
-                <div className='flex flex-col justify-between mx-2 py-6 2xl:flex-row'>
+                <div className='flex flex-col justify-between mx-2 py-6 min-[1620px]:flex-row'>
 
                     <h3 className="pt-1 pb-6 text-xl font-bold text-black"> {title} </h3>
 

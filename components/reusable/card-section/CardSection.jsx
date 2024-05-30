@@ -16,7 +16,7 @@ const CardSection = ({ referImg, title, content }) => {
     return (
 
         <div>
-            <div className="p-4 max-w-sm" data-aos="zoom-in" >
+            <div className="p-4 max-w-sm block mx-auto" data-aos="zoom-in" >
                 <div className="flex rounded-lg h-full dark:bg-gray-800 bg-white p-8 flex-col shadow-inner">
                     <div className="flex flex-col items-center my-3">
                         <div className='mb-4'>
