@@ -1,7 +1,7 @@
 import React from 'react';
-import getProjectData from '@/app/api/getProjectData';
+import getProjectData from '@/api/getProjectData';
 import ProjectCard from '@/components/reusable/projects-card/ProjectCard';
-import Error from '@/app/services/error';
+
 
 
 const Projects = async () => {
