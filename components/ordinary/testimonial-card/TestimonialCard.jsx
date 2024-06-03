@@ -5,7 +5,7 @@ import Image from 'next/image';
 const TestimonialCard = ({founderImg, founderName, comp_1, comp_2, comp_3, mainReview, reviewContent, brandImg}) => {
     
     return (
-        <article className="rounded-xl border border-gray-700 bg-white px-4 pt-8 pb-28 shadow-lg"
+        <article className="rounded-xl  bg-white px-4 pt-8 pb-28 shadow-xl"
        >
             <div className="flex items-center gap-4">
                 <Image

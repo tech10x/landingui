@@ -1,24 +1,14 @@
 'use client';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Carousel } from "@material-tailwind/react";
 import bulletPoint from '@/assets/icons/yellow-right-tick.png';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-// Import required modules
-import { Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
-
-import htmlIcon from '@/assets/icons/Technology-icons/html-icon.png';
+import htmlIcon from '@/assets/icons/Technology-icons/HTML.webp';
 import tailwindIcon from '@/assets/icons/Technology-icons/tailwind-icon.png';
 import javascriptIcon from '@/assets/icons/Technology-icons/javascript-icon.png';
 import reactjsIcon from '@/assets/icons/Technology-icons/react-js-icon.png';
 import nextjsIcon from '@/assets/icons/Technology-icons/next-js-icon.png';
 import nodejsIcon from '@/assets/icons/Technology-icons/node-js-icon.png';
-import expressjsIcon from '@/assets/icons/Technology-icons/express-js-icon.png';
+import expressjsIcon from '@/assets/icons/Technology-icons/express-icon.png';
 import mongodbIcon from '@/assets/icons/Technology-icons/mongodb-icon.png';
 
 const SingleProjectSlider = ({ projectImg, projectTitle }) => {
@@ -60,42 +50,34 @@ const SingleProjectSlider = ({ projectImg, projectTitle }) => {
     ];
   return (
     <>
-<section>
+<section className="mt-28">
 <div className="mx-auto max-w-screen-xl px-4 py-2 sm:px-6 sm:pb-16 sm:py-12 lg:px-8">
 
     <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
     <div className='w-full block mx-auto'>
-        <Swiper
-          pagination={{
-            type: 'fraction',
-          }}
-          navigation={{
-            nextEl: '.custom-next',
-            prevEl: '.custom-prev',
-          }}
-          modules={[Pagination, Navigation]}
-          className="Swiper"
-        >
-          <SwiperSlide>
-            <div className='flex flex-col justify-center items-center mb-14'>
-              <Image src={projectImg} alt={projectTitle} width={500} height={500} className='rounded-md mt-8' />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='flex flex-col justify-center items-center mb-14'>
-              <Image src={projectImg} alt={projectTitle} width={500} height={500} className='rounded-md mt-8' />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='flex flex-col justify-center items-center mb-14'>
-              <Image src={projectImg} alt={projectTitle} width={500} height={500} className='rounded-md mt-8' />
-            </div>
-          </SwiperSlide>
-
-          {/* Custom navigation elements */}
-          <div className="custom-next swiper-button-next"></div>
-          <div className="custom-prev swiper-button-prev"></div>
-        </Swiper>
+    <Carousel className="rounded-xl">
+      <Image
+        src={projectImg}
+        height={500}
+        width={500}
+        alt={projectTitle}
+        className="h-full w-full object-cover"
+      />
+      <Image
+        src={projectImg}
+        height={500}
+        width={500}
+        alt={projectTitle}
+        className="h-full w-full object-cover"
+      />
+      <Image
+        src={projectImg}
+        height={500}
+        width={500}
+        alt={projectTitle}
+        className="h-full w-full object-cover"
+      />
+    </Carousel>
         </div>
 
         <div className="lg:py-16">
