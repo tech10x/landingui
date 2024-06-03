@@ -1,0 +1,43 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.skeletonGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.skeletonBox {
+    background-color: #ddd;
+    height: 150px;
+    border-radius: 4px;
+    animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.skeletonBox {
+    background: linear-gradient(
+        90deg,
+        #f4f4f4 25%,
+        #e0e0e0 50%,
+        #f4f4f4 75%
+    );
+    background-size: 200% 100%;
+}

@@ -1,5 +1,6 @@
 const environment = {
-    apiUrl: process.env.API_KEY
+    allProjectsApiUrl: process.env.ALL_PROJECTS_API,
+    singleProjectApiUrl: process.env.SINGLE_PROJECT_API
 }
 
 const envConfig = Object.freeze(environment);

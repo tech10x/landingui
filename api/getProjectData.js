@@ -5,7 +5,7 @@ import axios from 'axios';
 const getProjectData = async () => {
     try {
 
-        const res = await axios.get(envConfig.apiUrl);
+        const res = await axios.get(envConfig.allProjectsApiUrl);
         const projectData = await res.data;
         return projectData;
 

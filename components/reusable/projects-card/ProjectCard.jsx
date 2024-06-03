@@ -3,8 +3,9 @@ import { React, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const ProjectCard = ({ imageSource, title, siteUrl }) => {
+const ProjectCard = ({ imageSource, title, siteUrl, dynamicLink }) => {
     useEffect(() => {
         AOS.init();
     }, [])
@@ -28,6 +29,9 @@ const ProjectCard = ({ imageSource, title, siteUrl }) => {
                     <h3 className="pt-1 pb-6 text-xl font-bold text-black"> {title} </h3>
 
                     <a href={siteUrl} className='py-1 px-2 lg:py-2 lg:px-8 border-2 bg-white rounded-lg font-medium text-lg text-gray-500 shadow-slate-600 hover:rounded-md transition-transform hover:scale-90 hover:border-gray-400 focus:border-teal-400 flex justify-center'>Visit Page</a>
+
+
+                    <Link href={`/projects/${dynamicLink}`} className='py-1 px-2 lg:py-2 mt-2 lg:px-8 border-2 bg-white rounded-lg font-medium text-lg text-gray-500 shadow-slate-600 hover:rounded-md transition-transform hover:scale-90 hover:border-gray-400 focus:border-teal-400 flex justify-center'>View Project</Link>
 
                 </div>
             </div>

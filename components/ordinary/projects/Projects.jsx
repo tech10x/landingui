@@ -22,7 +22,8 @@ const Projects = async () => {
                             key={data.id}
                             imageSource={data.thumbNail}
                             title={data.title}
-                            siteUrl={data.url} />)
+                            siteUrl={data.url}
+                            dynamicLink={data.id} />)
                 }
             </div>
         </>
