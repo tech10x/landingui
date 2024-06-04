@@ -1,52 +1,30 @@
-import React from "react";
+import React from 'react';
+import SwipeEffect from '../swipe-effect/SwipeEffect';
+
 
 const ProjectHomeBanner = () => {
-  return (
-    <>
-      {/*
-  Heads up! 👋
-
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-*/}
-
-      <section className="bg-teal-50">
-        <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
-
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl font-extrabold sm:text-5xl">
-              Let us find your
-              <strong className="block font-extrabold text-rose-700">
-                {" "}
-                Forever Home.{" "}
-              </strong>
-            </h1>
-
-            <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-              illo tenetur fuga ducimus numquam ea!
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-4 text-center">
-              <a
-                href="#"
-                className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
-              >
-                Get Started
-              </a>
-
-              <a
-                href="#"
-                className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
-              >
-                Learn More
-              </a>
+    return (
+        <div>
+            <div className='px-4 lg:px-24 bg-pink-100 flex items-center'>
+                <div className='flex w-full flex-col md:flex-row justify-between items-center gap-12 py-40'>
+                    {/* Left Content  */}
+                    <div className='md:w-1/2 space-y-8 h-full'>
+                        <h2 className='text-4xl font-bold leading-snug text-green-700'>
+                            Buy And Sell Your Books
+                            <span className='text-black'> For The Best Projects</span></h2>
+                        <p className='md:w-4/5'>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex pariatur animi quas eligendi temporibus labore autem dolorum totam quaerat, neque magni voluptatum placeat cumque deleniti. Soluta debitis voluptas placeat deleniti.</p>
+                        <div>
+                            <input type="text" name='search' id='search' placeholder='Search Your Favorite Book' className='py-2 px-4 rounded-s-sm text-md outline-none' />
+                            <button className='bg-green-500 px-6 py-2 text-white font-medium hover:bg-black transition-all ease-in duration-200'>Search</button>
+                        </div>
+                    </div>
+                    {/* Right Content  */}
+                    <div><SwipeEffect /></div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-    </>
-  );
-};
+    )
+}
 
 export default ProjectHomeBanner;
