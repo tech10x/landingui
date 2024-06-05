@@ -1,7 +1,4 @@
-'use client';
-import { React, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { React } from 'react';
 import Image from 'next/image';
 import amazonReview from '@/assets/images/Dedicated-Image/site-functionality-img/amazon-review-importer.svg';
 import clarity from '@/assets/images/Dedicated-Image/site-functionality-img/clarity.svg';
@@ -21,10 +18,7 @@ import rtoOptimizer from '@/assets/images/Dedicated-Image/site-functionality-img
 
 
 const SiteFunctionality = () => {
-   useEffect(() => {
-      AOS.init()
-   }, []);
-   return (
+    return (
       <div className='bg-pink-50 mt-12 pb-36 pt-2'>
          <div className='flex flex-col text-center my-24 mx-12 lg:mx-36 md:mx-28'>
             <h5 className='text-2xl font-bold lg:text-4xl md:text-3xl'>Enhance your sites functionality with plugins</h5>

@@ -1,18 +1,8 @@
-'use client';
-import { React, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 import Image from 'next/image';
 
 
 const CardSection = ({ referImg, title, content }) => {
-
-
-    useEffect(() => {
-        AOS.init()
-    }, []);
-
-
     return (
 
         <div>

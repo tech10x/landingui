@@ -4,7 +4,7 @@ import ProjectCard from '@/components/reusable/projects-card/ProjectCard';
 
 
 
-const Projects = async () => {
+const Projects = async ({sliceFrom, sliceTo}) => {
     const ourProjects = await getProjectData();
     const dataFlow = ourProjects.projects;
 
@@ -17,7 +17,7 @@ const Projects = async () => {
 
 
                 {
-                    dataFlow.slice(0, 6).map((data) =>
+                    dataFlow.slice(sliceFrom, sliceTo).map((data) =>
                         <ProjectCard
                             key={data.id}
                             imageSource={data.thumbNail}

@@ -1,17 +1,10 @@
-'use client'
-import { React, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { React } from 'react';
 import heroImage from '@/assets/images/Independent-image/Home-banner-hero-img.png';
 import Image from 'next/image';
 
 
 
 const HomeBanner = () => {
-    useEffect(() => {
-        AOS.init()
-    }, []);
-
     return (
         <div className='w-200' data-aos="fade-up">
 

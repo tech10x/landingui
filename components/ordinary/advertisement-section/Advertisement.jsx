@@ -1,15 +1,9 @@
-'use client'
-import { React, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 import styleSheet from './Advertisement.module.css';
 import rightTickIcon from '@/assets/icons/yellow-right-tick.png';
 import Image from 'next/image';
 
 const Advertisement = () => {
-  useEffect(() => {
-    AOS.init();
-  }, [])
   return (
     <div className={styleSheet.container} data-aos="fade-up">
       <div className={styleSheet.galaxy}>

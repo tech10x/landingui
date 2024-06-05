@@ -4,12 +4,15 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
 import Image from 'next/image';
+import SmCardSk from '@/utils/small-card-skeleton/SmCardSk';
+
 
 
 const SwipeEffect = ({data}) => {
-       
-    return (
+ 
+  return (
         <div className='banner'>
+{        !data ? <SmCardSk /> :
         <Swiper
           effect={'cards'}
           grabCursor={true}
@@ -18,12 +21,14 @@ const SwipeEffect = ({data}) => {
         >
 
           
-            {data.map((img) => 
+            {
+            data.map((img) => 
             <SwiperSlide key={img.id} className='flex items-center justify-center rounded-[18px] text-[22px] font-bold text-white'>
             <Image src={img.thumbNail} alt={img.title} width={400} height={600}/>
           </SwiperSlide>)}
 
         </Swiper>
+}
       </div>
     )
 }

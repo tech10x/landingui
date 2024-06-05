@@ -4,7 +4,6 @@ import Marquee from '@/components/ordinary/marquee/Marquee';
 import launchFastImg from '@/assets/images/Dedicated-Image/landing-page-hero-sec-img/launch-fast.svg';
 import scaleFasterImg from '@/assets/images/Dedicated-Image/landing-page-hero-sec-img/scale-faster.svg';
 import manageBetterImg from '@/assets/images/Dedicated-Image/landing-page-hero-sec-img/manage-better.svg';
-
 import firstHeroBulletIcon from '@/assets/icons/bullet-purple-icon-removebg-preview.png';
 import secondHeroBulletIcon from '@/assets/icons/black-blue-bulltet-point.webp';
 import thridHeroBulletIcon from '@/assets/icons/green-bullet-point.png';
@@ -16,6 +15,7 @@ import SiteFunctionality from '@/components/ordinary/site-functionality/SiteFunc
 import Testimonial from '@/components/ordinary/testimonial/Testimonial';
 import Projects from '@/components/ordinary/projects/Projects';
 import Advertisement from '@/components/ordinary/advertisement-section/Advertisement';
+
 
 
 
@@ -57,14 +57,13 @@ const Home = () => {
 
       <ServicesSec />
 
-      <Projects />
+      <Projects sliceFrom={0} sliceTo={6}/>
       <SiteFunctionality />
 
       <Testimonial />
 
       <Advertisement />
-
-
+      
     </>
   )
 }
