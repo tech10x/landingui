@@ -15,8 +15,8 @@ const SwipeEffect = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-           const fetchData = async () => {
-            const urlToBeFetch = envConfig.allProjectsApiUrl_2;
+          const fetchData = async () => {
+          const urlToBeFetch = envConfig.allProjectsApiUrl_2;
           try {
             const response = await axios.get(urlToBeFetch);
             const outPut = response.data;
