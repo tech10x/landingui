@@ -1,8 +1,11 @@
 import React from 'react';
 import SwipeEffect from '../swipe-effect/SwipeEffect';
+import getProjectData from '@/api/getProjectData';
 
 
-const ProjectHomeBanner = () => {
+const ProjectHomeBanner = async () => {
+    const ourProjects = await getProjectData();
+    const dataFlow = ourProjects.projects;
     return (
         <div>
             <div className='px-4 lg:px-24 bg-pink-100 flex items-center'>
@@ -20,7 +23,7 @@ const ProjectHomeBanner = () => {
                         </div>
                     </div>
                     {/* Right Content  */}
-                    <div><SwipeEffect /></div>
+                    <div><SwipeEffect data={dataFlow} /></div>
                 </div>
             </div>
         </div>
