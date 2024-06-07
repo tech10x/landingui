@@ -1,0 +1,16 @@
+.typewriter::after {
+    color: rgb(145, 0, 0);
+    content: '|';
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  

@@ -14,6 +14,7 @@
     align-items: center;
     overflow: hidden;
 }
+
 .world{
     position: relative;
     display: flex;
@@ -22,13 +23,12 @@
     background: url('../../../assets//images//Dedicated-Image/rotating-earth-sec-img/world-map.jpg');
     background-repeat: repeat-x;
     border-radius: 50%;
-    box-shadow: inset 0 0 30px rgba(0, 0, 0, 1.9), 0 0 60px #4433dd99;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 1.9), 0 0 30px #4433dd99;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
     animation: rotate 25s linear infinite;
 }
-
 .world::before{
     position: absolute;
     content: '';

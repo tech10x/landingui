@@ -1,9 +1,10 @@
+import ServiceBanner from '@/components/ordinary/service-banner/ServiceBanner';
 import React from 'react';
 
 const Services = () => {
     return (
-        <main>
-            Services Page
+        <main className='min-height-screen'>
+            <ServiceBanner />
         </main>
     )
 }
