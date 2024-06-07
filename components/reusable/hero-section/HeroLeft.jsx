@@ -5,11 +5,11 @@ const HeroLeft = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, i
 
     return (
         <section>
-            <div className="mx-auto max-w-screen-xl px-4 py-2 sm:px-6 sm:pb-16 sm:py-12 lg:px-8">
+            <div className="mx-auto max-w-screen px-4 py-2 sm:px-6 sm:pb-16 sm:py-12 lg:px-8">
 
                 <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
                     <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full"
-                        data-aos="flip-down">
+                        data-aos="flip-left">
                         <Image
                             alt={title}
                             src={referredImg}
@@ -19,7 +19,7 @@ const HeroLeft = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, i
                         />
                     </div>
 
-                    <div className="lg:py-16" data-aos="flip-up">
+                    <div className="lg:py-16" data-aos="flip-right">
                         <h2 className="text-3xl font-bold sm:text-4xl pb-4">{title}</h2>
                         <div className="space-y-4 text-gray-600">
                             <ul className='flex flex-col'>

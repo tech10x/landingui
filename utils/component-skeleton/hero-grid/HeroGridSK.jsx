@@ -1,5 +1,4 @@
 import React from 'react';
-import './HeroGridSK.css';
 
 const HeroGridSK = () => {
   return (

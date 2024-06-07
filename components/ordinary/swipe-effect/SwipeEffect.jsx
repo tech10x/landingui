@@ -11,7 +11,7 @@ import SmCardSk from '@/utils/small-card-skeleton/SmCardSk';
 const SwipeEffect = ({data}) => {
  
   return (
-        <div className='banner'>
+        <div className='mr-0  md:mr-20 lg:mr-20'>
 {        !data ? <SmCardSk /> :
         <Swiper
           effect={'cards'}
