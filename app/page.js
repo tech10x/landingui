@@ -14,7 +14,7 @@ import ServicesSec from '@/components/ordinary/services-section/ServicesSec';
 import SiteFunctionality from '@/components/ordinary/site-functionality/SiteFunctionality';
 import Testimonial from '@/components/ordinary/testimonial/Testimonial';
 import Projects from '@/components/ordinary/projects/Projects';
-import Advertisement from '@/components/ordinary/advertisement-section/Advertisement';
+import EarthAnimation from '@/components/ordinary/earth-animation/EarthAnimation';
 
 
 
@@ -62,8 +62,7 @@ const Home = () => {
 
       <Testimonial />
 
-      <Advertisement />
-      
+      <EarthAnimation />
     </>
   )
 }
