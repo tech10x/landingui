@@ -11,13 +11,13 @@ import SmCardSk from '@/utils/small-card-skeleton/SmCardSk';
 const SwipeEffect = ({data}) => {
  
   return (
-        <div className='mr-0  md:mr-20 lg:mr-20'>
+        <div className='mr-0  md:mr-20 lg:mr-20 min-w-[200px]'>
 {        !data ? <SmCardSk /> :
         <Swiper
           effect={'cards'}
           grabCursor={true}
           modules={[EffectCards]}
-          className='w-[240px] h-[320px]'
+          className='w-[200px] h-[320px] cardResponsiveBreakPoint'
         >
 
           

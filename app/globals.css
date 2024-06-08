@@ -76,3 +76,8 @@ border-radius: 50%;
     width: 1.6rem !important; 
 }
 
+@media screen and (max-width: 340px) {
+    .cardResponsiveBreakPoint{
+        width: 170px;
+    }
+}
