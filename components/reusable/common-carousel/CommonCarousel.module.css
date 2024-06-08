@@ -1,0 +1,7 @@
+.carousel svg{
+    background: black;
+    color: white;
+    height: 3rem !important;
+    width: 3rem !important;
+    border-radius: 50%;
+    }

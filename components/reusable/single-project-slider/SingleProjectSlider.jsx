@@ -1,5 +1,3 @@
-'use client';
-import { Carousel } from "@material-tailwind/react";
 import bulletPoint from '@/assets/icons/yellow-right-tick.png';
 import Image from 'next/image';
 import htmlIcon from '@/assets/icons/Technology-icons/HTML.webp';
@@ -10,6 +8,7 @@ import nextjsIcon from '@/assets/icons/Technology-icons/next-js-icon.png';
 import nodejsIcon from '@/assets/icons/Technology-icons/node-js-icon.png';
 import expressjsIcon from '@/assets/icons/Technology-icons/express-icon.png';
 import mongodbIcon from '@/assets/icons/Technology-icons/mongodb-icon.png';
+import CommonCarousel from '../common-carousel/CommonCarousel';
 
 const SingleProjectSlider = ({ projectImg, projectTitle }) => {
 
@@ -55,29 +54,7 @@ const SingleProjectSlider = ({ projectImg, projectTitle }) => {
 
     <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
     <div className='w-full block mx-auto'>
-    <Carousel className="rounded-xl">
-      <Image
-        src={projectImg}
-        height={500}
-        width={500}
-        alt={projectTitle}
-        className="h-full w-full object-cover"
-      />
-      <Image
-        src={projectImg}
-        height={500}
-        width={500}
-        alt={projectTitle}
-        className="h-full w-full object-cover"
-      />
-      <Image
-        src={projectImg}
-        height={500}
-        width={500}
-        alt={projectTitle}
-        className="h-full w-full object-cover"
-      />
-    </Carousel>
+ <CommonCarousel source={projectImg} altName={projectTitle} className='rounded-xl' />
         </div>
 
         <div className="lg:py-16">
