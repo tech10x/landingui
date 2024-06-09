@@ -21,7 +21,7 @@ const ServiceBanner = () => {
       <h2 className="lg:text-6xl md:text-5xl text-3xl font-extrabold lg:!leading-[64px] md:max-w-4xl">The <span className='text-red-400'>Most Modern</span> Card Platform for Debit</h2>
       <div className="grid md:grid-cols-2 gap-12 mt-8">
         <div>
-          <p className="text-3xl font-bold text-pink-400 leading-relaxed">
+          <p className="lg:text-3xl md:text-2xl text-xl font-bold text-pink-400 leading-relaxed">
           <TypeWriter texts={texts} />
           </p>
           <div className="mt-12">

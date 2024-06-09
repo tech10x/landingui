@@ -8,7 +8,6 @@
 #navBar{
     z-index: 100001 !important;
 }
-
 @media(max-width: 767px){
     .btn{
         display: none;

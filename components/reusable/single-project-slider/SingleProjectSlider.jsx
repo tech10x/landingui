@@ -57,7 +57,7 @@ const SingleProjectSlider = ({ projectImg, projectTitle }) => {
  <CommonCarousel source={projectImg} altName={projectTitle} className='rounded-xl' />
         </div>
 
-        <div className="lg:py-16">
+        <div className="lg:py-16 bg-gray-50 p-4 rounded-xl">
             <h2 className="text-3xl font-bold sm:text-4xl pb-4">{projectTitle}</h2>
             <div className="space-y-4 text-gray-600">
 
@@ -101,7 +101,7 @@ const SingleProjectSlider = ({ projectImg, projectTitle }) => {
                         <ul>
                            {
                             technologies.map((technology) => 
-                            <li key={technology.name} className='inline-flex items-center ml-4 my-6'>
+                            <li key={technology.name} className='inline-flex items-center my-6'>
                                 <Image src={technology.icon} alt={technology.name} height={30} width={30} className='ml-4'/>
                                 <h6 className='ml-2'>{technology.name}</h6>
                             </li>)

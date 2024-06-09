@@ -18,11 +18,11 @@ const CountUpSection = () => {
 
     return (
         <>   
-        <div ref={sectionRef} className='flex flex-col justify-center items-center py-8 bg-black text-white'>
+        <div ref={sectionRef} className='flex flex-col justify-center items-center bg-black text-white'>
         {  
         isVisable 
             ?
-              <div className='flex flex-col lg:flex-row md:flex-row justify-between gap-6 md:w-3/4 my-14 '>
+              <div className='flex flex-col lg:flex-row md:flex-row justify-between gap-6 md:w-3/4 my-8 '>
                   <div className='flex flex-col justify-center items-center'>
                       <h3 className='text-3xl font-bold'>
                       <CountUp start={0} end={1200} duration={2.75}></CountUp>+</h3>
