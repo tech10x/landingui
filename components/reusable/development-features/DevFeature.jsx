@@ -45,7 +45,7 @@ const DevFeature = () => {
                 <g
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
+                  strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeMiterlimit="10"
                   strokeWidth="40"

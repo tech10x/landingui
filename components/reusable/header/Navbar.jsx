@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import brandLogo from "@/assets/icons/tech10x.webp";
 import toggleIcon from "@/assets/icons/menu.webp";
-import xmarkIcon from "@/assets/icons/cancel.png";
+import { MdSegment } from "react-icons/md";
 import { usePathname } from "next/navigation";
+import SideHeader from "./SideHeader";
 
 const NavigationMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +33,9 @@ const NavigationMenu = () => {
       path: "/contact",
     },
   ];
-
+  navItems.map((getPath) => {
+    const thePathIs = getPath.path;
+  });
   // Active link handler
   const isActive = (thePath) => {
     return currentPath === thePath;
@@ -82,12 +85,16 @@ const NavigationMenu = () => {
       {/* Navbar body  */}
       <header
         id="navBar"
-        className={`w-full  fixed top-0 left-0 right-0 ${isMenuOpen ? "bg-white" : "bg-transparent"
-          }`}
+        className={`w-full  fixed top-0 left-0 right-0 ${
+          isMenuOpen ? "bg-transparent" : "bg-transparent"
+        }`}
       >
         <nav
-          className={`py-4 lg:px-24 px-4 ${isSticky ? "sticky top-0 left-0 right-0 bg-white" : ""
-            }`}
+          className={`py-4 lg:px-24 px-4 ${
+            isSticky && isMenuOpen === false
+              ? "sticky top-0 left-0 right-0 bg-white"
+              : ""
+          }`}
         >
           <div className="flex justify-between items-center sm:mr-1">
             {/* Rendering logo  */}
@@ -117,8 +124,9 @@ const NavigationMenu = () => {
                   href={path}
                   className={`block text-sm align-center
                                  text-black uppercase cursor-pointer
-                                 hover:text-blue-800 font-bold ${isActive(path) ? "link-active" : ""
-                    }`}
+                                 hover:text-blue-800 font-bold ${
+                                   isActive(path) ? "link-active" : ""
+                                 }`}
                 >
                   {link}
                 </Link>
@@ -137,48 +145,15 @@ const NavigationMenu = () => {
             <div className={"md:hidden"}>
               <button onClick={toggleMenu} className={"focus:outline-none"}>
                 {isMenuOpen ? (
-                  <Image
-                    src={xmarkIcon}
-                    alt="close-menu"
-                    height={40}
-                    width={40}
-                    loading="eager"
-                    priority={true}
-                  />
+                  ""
                 ) : (
-                  <Image
-                    src={toggleIcon}
-                    alt="open-menu"
-                    height={40}
-                    width={40}
-                    loading="eager"
-                    priority={true}
-                  />
+                  <MdSegment className="text-5xl font-extrabold hover:transition-transform hover:scale-110" />
                 )}
               </button>
             </div>
 
             {/* Navigation for small devices */}
-            <div
-              className={`space-y-4 px-4 mt-12 py-7 bg-white 
-                       ${isMenuOpen
-                  ? "block fixed top-5 right-0 left-0"
-                  : "hidden"
-                }`}
-            >
-              {navItems.map(({ link, path }) => (
-                <button
-                  key={path}
-                  onClick={closeToggle}
-                  className={`block text-sm mx-auto
-                                text-blue-800 uppercase cursor-pointer items-center
-                                hover:text-black font-bold ${isActive(path) ? "link-active" : ""
-                    }`}
-                >
-                  <Link href={path}>{link}</Link>
-                </button>
-              ))}
-            </div>
+            {isMenuOpen && <SideHeader closeMenu={closeToggle} />}
           </div>
         </nav>
       </header>
