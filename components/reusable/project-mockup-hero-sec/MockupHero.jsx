@@ -2,14 +2,35 @@ import Image from "next/image";
 import React from "react";
 
 const MockupHero = ({
-  referredImg,
-  title,
-  itemOne,
-  itemTwo,
-  itemThree,
-  itemFour,
-  itemFive,
-  bulletPoint,
+  desktopTitle,
+  tabletTitle,
+  mobileTitle,
+  desktopParagraph,
+  tabletParagraph,
+  moblieParagraph,
+  desktopImg,
+  tabletImg,
+  mobileImg,
+  desktopBulletPoint,
+  tabletBulletPoint,
+  mobilebulletPoint,
+  desktopList1,
+  desktopList2,
+  desktopList3,
+  desktopList4,
+  desktopList5,
+  tabletList1,
+  tabletList2,
+  tabletList3,
+  tabletList4,
+  tabletList5,
+  mobileList1,
+  mobileList2,
+  mobileList3,
+  mobileList4,
+  mobileList5
+
+
 }) => {
   return (
     <main className="mt-16">
@@ -18,72 +39,74 @@ const MockupHero = ({
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
             <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
               <Image
-                alt={title}
-                src={referredImg}
-                quality={70}
+                alt={desktopTitle}
+                src={desktopImg}
+                quality={100}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover"
+                height={500}
+                width={500}
               />
             </div>
 
             <div className="lg:py-24">
-              <h2 className="text-3xl font-bold sm:text-4xl">{title}</h2>
-
+              <h2 className="text-3xl font-bold sm:text-4xl pb-4">{desktopTitle}</h2>
+              <p className="text-sm text-gray-600">{desktopParagraph}</p>
               <div className="mt-4 text-gray-600">
                 <ul className="flex flex-col">
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={desktopBulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemOne}
+                    {desktopList1}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={desktopBulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemTwo}
+                    {desktopList2}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={desktopBulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemThree}
+                    {desktopList3}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={desktopBulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemFour}
+                    {desktopList4}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={desktopBulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemFive}
+                    {desktopList5}
                   </li>
                 </ul>
               </div>
@@ -96,71 +119,74 @@ const MockupHero = ({
           <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
             <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
               <Image
-                alt={title}
-                src={referredImg}
-                quality={70}
+                alt={tabletTitle}
+                src={tabletImg}
+                quality={100}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover rounded-lg"
+                height={500}
+                width={500}
               />
             </div>
 
             <div className="lg:py-16">
-              <h2 className="text-3xl font-bold sm:text-4xl pb-4">{title}</h2>
-              <div className="space-y-4 text-gray-600">
+              <h2 className="text-3xl font-bold sm:text-4xl pb-4">{tabletTitle}</h2>
+              <p className="text-sm text-gray-600">{tabletParagraph}</p>
+              <div className="space-y-4 mt-4  text-gray-600">
                 <ul className="flex flex-col">
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={tabletBulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemOne}
+                    {tabletList1}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={tabletBulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemTwo}
+                    {tabletList2}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={tabletBulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemThree}
+                    {tabletList3}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={tabletBulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemFour}
+                    {tabletList4}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={tabletBulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemFive}
+                    {tabletList5}
                   </li>
                 </ul>
               </div>
@@ -173,72 +199,75 @@ const MockupHero = ({
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
             <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
               <Image
-                alt={title}
-                src={referredImg}
-                quality={70}
+                alt={mobileTitle}
+                src={mobileImg}
+                quality={100}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover"
+                height={500}
+                width={500}
               />
             </div>
 
             <div className="lg:py-24">
-              <h2 className="text-3xl font-bold sm:text-4xl">{title}</h2>
+              <h2 className="text-3xl font-bold sm:text-4xl pb-4">{mobileTitle}</h2>
+              <p className="text-sm text-gray-600">{moblieParagraph}</p>
 
               <div className="mt-4 text-gray-600">
                 <ul className="flex flex-col">
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={mobilebulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemOne}
+                    {mobileList1}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={mobilebulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemTwo}
+                    {mobileList2}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={mobilebulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemThree}
+                    {mobileList3}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={mobilebulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemFour}
+                    {mobileList4}
                   </li>
 
                   <li className="inline-flex items-center my-1.5 text-lg font-semibold">
                     <Image
-                      src={bulletPoint}
+                      src={mobilebulletPoint}
                       height={22}
                       width={22}
                       alt="Bulltet-Points"
                       className="mr-3"
                     />
-                    {itemFive}
+                    {mobileList5}
                   </li>
                 </ul>
               </div>
