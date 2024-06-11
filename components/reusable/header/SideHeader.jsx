@@ -3,14 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import brandLogo from '@/assets/icons/tech10x.webp';
-import closeBtn from '@/assets/icons/cancel.png';
 import { usePathname } from 'next/navigation';
 import { BsExclamationOctagonFill } from "react-icons/bs";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { PiPresentationChartBold } from "react-icons/pi";
 import { FcSupport } from "react-icons/fc";
 import { IoCloseCircleOutline } from "react-icons/io5";
-import scrollToTop from "@/utils/scroll-reset/ScrollToTop";
+import ScrollToTop from "@/utils/scroll-reset/ScrollToTop";
 const SideHeader = ({closeMenu}) => {
     const pathname = usePathname()
   return (
@@ -25,7 +24,7 @@ const SideHeader = ({closeMenu}) => {
               href="/"
               className={
                 "text-2xl font-bold text-black flex items-center gap-2"
-              } onClick={scrollToTop}
+              } onClick={ScrollToTop}
             >
               <Image
                 src={brandLogo}
@@ -42,7 +41,7 @@ const SideHeader = ({closeMenu}) => {
               <Link prefetch={true}
                 className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${pathname === '/services' ? 'link-active' : ''}`}
                 href="/services"
-                onClick={scrollToTop}
+                onClick={ScrollToTop}
               >
                 <FcSupport className="w-[18px] h-[18px] mr-4" />
                 <span>Service</span>
@@ -52,7 +51,7 @@ const SideHeader = ({closeMenu}) => {
               <Link prefetch={true}
                 className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${pathname === '/projects' ? 'link-active' : ''}`}
                 href="/projects"
-                onClick={scrollToTop}
+                onClick={ScrollToTop}
               >
                  <PiPresentationChartBold className="w-[18px] h-[18px] mr-4" />
                 <span>Projects</span>
@@ -62,7 +61,7 @@ const SideHeader = ({closeMenu}) => {
               <Link prefetch={true}
                 className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${pathname === '/about' ? 'link-active' : ''}`}
                 href="/about"
-                onClick={scrollToTop}
+                onClick={ScrollToTop}
               >
                  <BsExclamationOctagonFill className="w-[18px] h-[18px] mr-4"/>
                 <span>About</span>
@@ -72,7 +71,7 @@ const SideHeader = ({closeMenu}) => {
               <Link prefetch={true}
                className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${pathname === '/contact' ? 'link-active' : ''}`}
                 href="/contact"
-                onClick={scrollToTop}
+                onClick={ScrollToTop}
               >
                 <FaPhoneVolume className="w-[18px] h-[18px] mr-4" />
                 <span>Contact</span>

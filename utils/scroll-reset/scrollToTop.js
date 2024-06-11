@@ -1,5 +1,5 @@
 'use client';
-const scrollToTop = () => {
+const ScrollToTop = () => {
   return window.scrollTo(0, 0);
 }
-export default scrollToTop;
+export default ScrollToTop;
