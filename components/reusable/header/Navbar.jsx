@@ -6,7 +6,7 @@ import brandLogo from "@/assets/icons/tech10x.webp";
 import { MdSegment } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import SideHeader from "./SideHeader";
-import ScrollToTop from '@/utils/scroll-reset/ScrollToTop';
+
 
 
 const NavigationMenu = () => {
@@ -102,7 +102,7 @@ const NavigationMenu = () => {
               className={
                 "text-2xl font-bold text-black flex items-center gap-2"
               }
-              onClick={ScrollToTop}>
+              >
               <Image
                 src={brandLogo}
                 alt="Tech10x logo"
@@ -116,7 +116,7 @@ const NavigationMenu = () => {
             </Link>
 
             {/* Nav item for large device  */}
-            <ul className={"md:flex space-x-12 hidden"} onClick={ScrollToTop}>
+            <ul className={"md:flex space-x-12 hidden"} >
               {navItems.map(({ link, path }) => (
                 <Link prefetch={true}
                   key={path}
