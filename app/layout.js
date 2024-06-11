@@ -2,6 +2,8 @@ import { Roboto } from 'next/font/google';
 import "./globals.css";
 import NavigationMenu from '@/components/reusable/header/Navbar';
 import Footer from '@/components/reusable/footer/Footer';
+import ConsoleWarning from '@/utils/console-warning/ConsoleWarning';
+
 
 const roboto_init = Roboto({
   subsets: ['latin'],
@@ -25,8 +27,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto_init.variable}>
         <NavigationMenu />
-        {children}
+        {children} 
         <Footer />
+        <ConsoleWarning />
       </body>
     </html>
   );
