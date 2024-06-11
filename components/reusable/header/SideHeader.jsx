@@ -10,6 +10,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { PiPresentationChartBold } from "react-icons/pi";
 import { FcSupport } from "react-icons/fc";
 import { IoCloseCircleOutline } from "react-icons/io5";
+import scrollToTop from "@/utils/scroll-reset/ScrollToTop";
 const SideHeader = ({closeMenu}) => {
     const pathname = usePathname()
   return (
@@ -24,7 +25,7 @@ const SideHeader = ({closeMenu}) => {
               href="/"
               className={
                 "text-2xl font-bold text-black flex items-center gap-2"
-              }
+              } onClick={scrollToTop}
             >
               <Image
                 src={brandLogo}
@@ -38,39 +39,40 @@ const SideHeader = ({closeMenu}) => {
               Tech10x
             </Link>
             <li>
-              <Link
+              <Link prefetch={true}
                 className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${pathname === '/services' ? 'link-active' : ''}`}
                 href="/services"
+                onClick={scrollToTop}
               >
                 <FcSupport className="w-[18px] h-[18px] mr-4" />
                 <span>Service</span>
               </Link>
             </li>
             <li>
-              <Link
+              <Link prefetch={true}
                 className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${pathname === '/projects' ? 'link-active' : ''}`}
                 href="/projects"
-                
+                onClick={scrollToTop}
               >
                  <PiPresentationChartBold className="w-[18px] h-[18px] mr-4" />
                 <span>Projects</span>
               </Link>
             </li>
             <li>
-              <Link
+              <Link prefetch={true}
                 className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${pathname === '/about' ? 'link-active' : ''}`}
                 href="/about"
-               
+                onClick={scrollToTop}
               >
                  <BsExclamationOctagonFill className="w-[18px] h-[18px] mr-4"/>
                 <span>About</span>
               </Link>
             </li>
             <li>
-              <Link
+              <Link prefetch={true}
                className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${pathname === '/contact' ? 'link-active' : ''}`}
                 href="/contact"
-
+                onClick={scrollToTop}
               >
                 <FaPhoneVolume className="w-[18px] h-[18px] mr-4" />
                 <span>Contact</span>

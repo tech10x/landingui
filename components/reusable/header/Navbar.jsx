@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import brandLogo from "@/assets/icons/tech10x.webp";
-import toggleIcon from "@/assets/icons/menu.webp";
 import { MdSegment } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import SideHeader from "./SideHeader";
+import scrollToTop from "@/utils/scroll-reset/ScrollToTop";
 
 const NavigationMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -103,7 +103,7 @@ const NavigationMenu = () => {
               className={
                 "text-2xl font-bold text-black flex items-center gap-2"
               }
-            >
+              onClick={scrollToTop}>
               <Image
                 src={brandLogo}
                 alt="Tech10x logo"
@@ -117,9 +117,9 @@ const NavigationMenu = () => {
             </Link>
 
             {/* Nav item for large device  */}
-            <ul className={"md:flex space-x-12 hidden"}>
+            <ul className={"md:flex space-x-12 hidden"} onClick={scrollToTop}>
               {navItems.map(({ link, path }) => (
-                <Link
+                <Link prefetch={true}
                   key={path}
                   href={path}
                   className={`block text-sm align-center

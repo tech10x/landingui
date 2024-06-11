@@ -20,8 +20,8 @@ import EarthAnimation from '@/components/ordinary/earth-animation/EarthAnimation
 
 
 
-const Home = () => {
 
+const Home = () => {
   return (
     <>
 
