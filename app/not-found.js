@@ -2,7 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 import NotFoundImg from '@/assets/images/Independent-image/page-found-img.jpg';
 import Image from 'next/image';
-const NotFoundBanner = () => {
+
+export default function NotFound()  {
   return (
     <main className="h-screen w-full flex flex-col justify-center items-center mt-28">
       <Image src={NotFoundImg} alt="Not Found Image" width={500} height={500} className='mt-12'/>
@@ -15,8 +16,5 @@ const NotFoundBanner = () => {
       </div> 
      
 </main>
-  )
-}
-
-export default NotFoundBanner;
-
+)
+  }
