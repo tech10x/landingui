@@ -1,22 +1,46 @@
 "use client";
 import { useState } from "react";
 import sendContactForm from "@/api/sendContactForm";
-
+import CustomAlert from "@/utils/custom-alert/CustomAlert";
+import successMessageIcon from '@/assets/icons/green-tick-1.png';
+import errorMessageIcon from '@/assets/icons/alert-error-icon.png';
 const FormFeald = () => {
   const [clientName, setClientName] = useState("");
   const [clientEmail, setClientEmail] = useState("");
   const [clientContactNo, setClientContactNo] = useState("");
   const [neededSolution, setNededSolution] = useState("");
   const [projectBrief, setProjectBrief] = useState("");
-  
+  const [ifSuccess, setSuccess] = useState(false);
+  const [ifFail, setFail] = useState(false);
+
+  const getStatus = (status) => {
+    console.log(status);
+   if(status === 'success'){
+    setSuccess(true);
+   }else if(status === 'failed'){
+    setFail(true);
+   }else{
+    setSuccess(false);
+    setFail(false);
+   }
+
+  }
+
+  const handleSuccessCloseEvent = () => {
+    setSuccess(false);
+  }
+  const handleFaliureCloseEvent = () => {
+    setFail(false);
+  }
   const handleSubmit = (event) => {
     event.preventDefault();
-    sendContactForm(
+   sendContactForm(
       clientName,
       clientEmail,
       clientContactNo,
       neededSolution,
-      projectBrief
+      projectBrief,
+      getStatus
     );
     setClientName("");
     setClientEmail("");
@@ -25,7 +49,6 @@ const FormFeald = () => {
     setProjectBrief("");
     event.target.reset();
   };
-
   return (
 
     <form onSubmit={handleSubmit} className="emailForm">
@@ -111,6 +134,25 @@ const FormFeald = () => {
       >
         Send message
       </button>
+
+       
+      <CustomAlert 
+      showOrHide={ifSuccess === true ? 'flex' : 'hidden'}
+      closeButton={handleSuccessCloseEvent}
+      statusIcon={successMessageIcon}
+      alertHead={'Awsome!'}
+      message1={'Your information has been sended succesfully'}
+      message2={'We will reachout to you soon !!!'}
+      buttonColor={'bg-green-500 hover:bg-green-600'}/>
+
+<CustomAlert 
+      showOrHide={ifFail === true ? 'flex' : 'hidden'}
+      closeButton={handleFaliureCloseEvent}
+      statusIcon={errorMessageIcon}
+      alertHead={'Sorry we are unable to submit!'}
+      message1={'Please try sometime later!!'}
+      buttonColor={'bg-red-500 hover:bg-red-800'}/>
+
     </form>
   );
 };

@@ -6,7 +6,8 @@ const sendContactForm = async (
   clientEmail,
   clientContactNo,
   neededSolution,
-  projectBrief
+  projectBrief,
+  callback
 ) => {
   const serviceId = envConfig.emailjsServiceId;
   const templateId = envConfig.emailjsTemplateId;
@@ -26,12 +27,15 @@ const sendContactForm = async (
   };
 
   try {
-    const res = await axios.post(envConfig.emailjsApiUrl, data);
-    alert("Succesfull!!!!");
-    return res;
+    await axios.post(envConfig.emailjsApiUrl, data);
+    let success = 'success';
+    callback(success);
   } catch (error) {
-    alert("Failed!!!");
-    console.log(error);
+    if(error){
+      let failed = 'failed';
+      callback(failed);
+    }
+     console.log(error);
   }
 };
 

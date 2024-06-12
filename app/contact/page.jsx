@@ -9,6 +9,7 @@ const Contact = () => {
             <ContactBanner />
             <HeroHeading content={"Contact Us"} />
             <ContactUsBody />
+            
           </main>
     )
 }
