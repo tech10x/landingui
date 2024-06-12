@@ -20,13 +20,13 @@ const ProjectCard = ({ imageSource, title, siteUrl, dynamicLink }) => {
         {isClicked === true ? loading() :
         <div className='border-current border-slate-400 rounded-lg shadow-2xl hover:transition-transform hover:scale-90 cursor-pointer transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-900'
             data-aos="zoom-out">
-            <article className="relative rounded-t-lg overflow-hidden shadow transition hover:shadow-lg sm:h-[550px] h-[600px] md:h-[500px] lg:h-[500px] 2xl:h-[600px]">
+            <article className="relative rounded-t-lg overflow-hidden shadow transition hover:shadow-lg sm:h-[450px] h-[450px] md:h-[450px] lg:h-[450px] 2xl:h-[450px]">
                 <Image
                     alt={title}
                     src={imageSource}
                     width={500}
-                    height={500}
-                    className="absolute inset-0  w-full object-cover h-[600px] sm:h-[550px]  md:h-[500px] lg:h-[500px] 2xl:h-[600px]"
+                    height={300}
+                    className="absolute inset-0  w-full object-cover h-[450px] sm:h-[450px]  md:h-[450px] lg:h-[450px] 2xl:h-[600px]"
                 />
 
 

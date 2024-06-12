@@ -22,7 +22,7 @@ const ServicesSec = () => {
         {
             imgUrl: OptimisedCheckout,
             title: "Optimised Checkouts",
-            textContent: "Offer a seamless shopping experience optimised for checkouts and reduce abandonment rates."
+            textContent: "Offer a seamless shopping experience optimised for checkouts "
         },
         {
             imgUrl: StaffAccounts,

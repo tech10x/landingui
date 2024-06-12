@@ -3,6 +3,7 @@ import "./globals.css";
 import NavigationMenu from '@/components/reusable/header/Navbar';
 import Footer from '@/components/reusable/footer/Footer';
 import ConsoleWarning from '@/utils/console-warning/ConsoleWarning';
+import ScrollToTop from '@/utils/scroll-to-top/ScrollToTop';
 
 
 const roboto_init = Roboto({
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto_init.variable}>
         <NavigationMenu />
+        <ScrollToTop />
         {children} 
         <Footer />
         <ConsoleWarning />
