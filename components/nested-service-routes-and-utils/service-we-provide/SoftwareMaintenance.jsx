@@ -6,7 +6,7 @@ import React from 'react';
 
 const SoftwareMaintenance = () => {
   return (
-    <div className='mx-12'>
+    <div>
       <WhyTech10x />
       <Step />
       <TechnologyWeUse />

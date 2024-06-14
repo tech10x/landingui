@@ -3,11 +3,11 @@ import React from 'react';
 const AboutBanner = () => {
   return (
     <div>
-        <div className="font-sans text-[#333]">
+        <div className="font-sans text-[#333] bg-gradient-to-r from-white via-[#E4FE66] to-[#55F5A3] py-40">
       <div className="text-center max-w-2xl max-md:max-w-md mx-auto">
         <div>
           <h2 className="md:text-4xl text-3xl font-extrabold mb-4 md:!leading-[45px]">Crafting Digital Elegance - Exploring <span className="text-blue-600">Tailwind CSS</span> for Intuitive User Interfaces</h2>
-          <p className="mt-6 text-sm leading-relaxed">Indulge in a symphony of flavors as we curate culinary masterpieces designed to tantalize your taste buds. Our dishes, meticulously crafted with passion and precision, promise to transform your dining experience into a gastronomic journey.</p>
+          <p className="mt-6 text-lg font-medium leading-relaxed">Indulge in a symphony of flavors as we curate culinary masterpieces designed to tantalize your taste buds. </p>
           <div className="grid sm:grid-cols-3 gap-6 items-center mt-14">
             <div className="flex flex-col items-center text-center">
               <h5 className="font-bold text-2xl text-blue-600 mb-1">10+</h5>

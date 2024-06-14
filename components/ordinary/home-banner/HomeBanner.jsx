@@ -9,7 +9,7 @@ const HomeBanner = () => {
         <div className='w-200' data-aos="fade-up">
 
             <div>
-                <div className='px-4 lg:px-24 flex items-center' id='homeBannerBg'>
+                <div className='px-4 lg:px-24 flex items-center bg-gradient-to-r from-white via-[#E4FE66] to-[#55F5A3]'>
                     <div className='flex w-full flex-col md:flex-row justify-between items-center gap-12 py-40'>
                         {/* Left Content  */}
                         <div className='md:w-1/2 space-y-8 h-full'>

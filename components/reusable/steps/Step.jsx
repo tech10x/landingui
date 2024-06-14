@@ -5,7 +5,7 @@ const Step = () => {
     <div>
 
 
-<div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+<div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mx-12">
   <div>
   <h2 className="font-heading dark:text-gray-100 mb-8 text-3xl font-bold lg:text-4xl">Sed ac magna sit amet risus tristique interdum. hac.
   </h2>

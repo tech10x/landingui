@@ -14,7 +14,7 @@ const TechnologyWeUse = () => {
     <div className="flex flex-wrap -m-2">
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <Image alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
+          <Image alt="team" className="w-16 h-16 bg-green-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Holden Caulfield</h2>
             <p className="text-gray-500">UI Designer</p>
@@ -23,7 +23,7 @@ const TechnologyWeUse = () => {
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <Image alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
+          <Image alt="team" className="w-16 h-16 bg-green-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Henry Letham</h2>
             <p className="text-gray-500">CTO</p>
@@ -32,7 +32,7 @@ const TechnologyWeUse = () => {
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <Image alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
+          <Image alt="team" className="w-16 h-16 bg-green-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Oskar Blinde</h2>
             <p className="text-gray-500">Founder</p>
@@ -41,7 +41,7 @@ const TechnologyWeUse = () => {
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <Image alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
+          <Image alt="team" className="w-16 h-16 bg-green-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">John Doe</h2>
             <p className="text-gray-500">DevOps</p>
@@ -50,7 +50,7 @@ const TechnologyWeUse = () => {
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <Image alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
+          <Image alt="team" className="w-16 h-16 bg-green-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Martin Eden</h2>
             <p className="text-gray-500">Software Engineer</p>
@@ -59,7 +59,7 @@ const TechnologyWeUse = () => {
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <Image alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
+          <Image alt="team" className="w-16 h-16 bg-green-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Boris Kitua</h2>
             <p className="text-gray-500">UX Researcher</p>
@@ -68,7 +68,7 @@ const TechnologyWeUse = () => {
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <Image alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
+          <Image alt="team" className="w-16 h-16 bg-green-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Atticus Finch</h2>
             <p className="text-gray-500">QA Engineer</p>
@@ -77,7 +77,7 @@ const TechnologyWeUse = () => {
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <Image alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
+          <Image alt="team" className="w-16 h-16 bg-green-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Alper Kamu</h2>
             <p className="text-gray-500">System</p>
@@ -86,7 +86,7 @@ const TechnologyWeUse = () => {
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <Image alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
+          <Image alt="team" className="w-16 h-16 bg-green-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={tempLogo}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Rodrigo Monchi</h2>
             <p className="text-gray-500">Product Manager</p>

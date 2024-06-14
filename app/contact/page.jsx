@@ -6,10 +6,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <main className='min-h-screen'>
-            <ContactBanner />
-            <HeroHeading content={"Contact Us"} />
-            <ContactUsBody />
-            
+            <ContactUsBody />            
           </main>
     )
 }

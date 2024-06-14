@@ -71,7 +71,7 @@ const OurServices = () => {
        {/* Maping ourservice array to create list item */}
         {
           ourService.map((item, index) => 
-          <li key={index} className={`${buttonNo === index ? 'text-blue-600 font-bold text-base text-center bg-gray-50 py-3 px-6 border-b-2 border-blue-600 cursor-pointer transition-all' : "text-gray-600 font-semibold text-base text-center hover:bg-gray-50 py-3 px-6 border-b-2 cursor-pointer transition-all"}`} 
+          <li key={index} className={`${buttonNo === index ? 'text-blue-600 font-bold text-base text-center bg-gray-50 py-3 px-0 lg:px-6 border-b-2 border-blue-600 cursor-pointer transition-all' : "text-gray-600 font-semibold text-base text-center hover:bg-gray-50 py-3 px-6 border-b-2 cursor-pointer transition-all"}`} 
           onClick={() => handleCustomRoute(index)}>{item} {/* Item Showing from ourservice Array  */}
           
 

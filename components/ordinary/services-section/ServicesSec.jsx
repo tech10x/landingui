@@ -41,7 +41,7 @@ const ServicesSec = () => {
         }
     ];
     return (
-        <section className='bg-pink-50 pb-12 pt-2 mt-8'>
+        <section className='bg-green-50 pb-12 pt-2 mt-8'>
             <div className='flex flex-col text-center my-16'>
                 <h5 className='text-2xl font-bold lg:text-4xl md:text-3xl'>E-commerce Simplified, Success Amplified</h5>
                 <h6 className='text-[0.9rem] lg:text-[1.3rem] md:text-[1rem] font-medium text-gray-500 mt-4'>Empowering your online business growth with all the essential tools.</h6>

@@ -10,7 +10,7 @@
     background: #eeee;
 }
 ::-webkit-scrollbar-thumb{
-    background: #aa00ffee;
+    background: rgb(103, 193, 103);
     border-radius: 20%;
     width: 100%;
 } 

@@ -33,8 +33,8 @@ const MissionVision = () => {
               paragraph={
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit"
               }
-              backgroundcolor={`bg-black ${isClicked === 1 && "bg-white"}`}
-              textcolor={`${isClicked === 1 ? "text-black" : "text-white"}`}
+              backgroundcolor={`bg-blue-900 ${isClicked === 1 && "bg-white"}`}
+              textcolor={`${isClicked === 1 ? "text-blue-900" : "text-white"}`}
             />
           </button>
 
@@ -45,8 +45,8 @@ const MissionVision = () => {
               paragraph={
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit"
               }
-              backgroundcolor={`bg-black ${isClicked === 0 && "bg-white"}`}
-              textcolor={`${isClicked === 0 ? "text-black" : "text-white"}`}
+              backgroundcolor={`bg-blue-900 ${isClicked === 0 && "bg-white"}`}
+              textcolor={`${isClicked === 0 ? "text-blue-900" : "text-white"}`}
             />
           </button>
         </div>

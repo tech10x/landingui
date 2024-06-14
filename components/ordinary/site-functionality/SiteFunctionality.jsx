@@ -19,7 +19,7 @@ import rtoOptimizer from '@/assets/images/Dedicated-Image/site-functionality-img
 
 const SiteFunctionality = () => {
     return (
-      <div className='bg-pink-50 mt-12 pb-36 pt-2'>
+      <div className='bg-green-50 mt-12 pb-36 pt-2'>
          <div className='flex flex-col text-center my-24 mx-12 lg:mx-36 md:mx-28'>
             <h5 className='text-2xl font-bold lg:text-4xl md:text-3xl'>Enhance your sites functionality with plugins</h5>
             <h6 className='text-[0.9rem] lg:text-[1.3rem] md:text-[1rem] font-medium text-gray-500 mt-4'>Choose from over 40+ plugins. Be it tracking analytics, managing shipments to building email lists. Theres a plugin for everything.</h6>
@@ -101,7 +101,7 @@ const SiteFunctionality = () => {
          </div>
 
          <div className='mt-36 flex justify-center'>
-            <button className='py-1 px-4 lg:py-2 lg:px-8 border-2 bg-white rounded-lg font-medium text-lg text-gray-500 shadow-slate-600 hover:rounded-md transition-transform hover:scale-110 hover:border-gray-400 focus:border-teal-400'>Take a look</button>
+            <button className='py-1 px-4 lg:py-2 lg:px-8 border-2 bg-green-500 rounded-lg font-medium text-lg text-white shadow-slate-600 hover:rounded-md transition-transform hover:scale-110 hover:border-gray-400 focus:border-teal-400'>Take a look</button>
          </div>
 
       </div>

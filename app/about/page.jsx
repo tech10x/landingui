@@ -5,7 +5,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <main className='mt-40 min-height-screen'>
+        <main className='min-height-screen'>
            <AboutBanner />
            <MissionVision />
            <OurTeam />
