@@ -1,42 +1,42 @@
 import CardSection from '@/components/reusable/card-section/CardSection';
 import React from 'react';
-import SiteSpeedIcon from '@/assets/icons/cards-icon/Site-Speed-Icon.png';
-import MultiWarehouse from '@/assets/icons/cards-icon/Warehouse-icon.png';
-import OptimisedCheckout from '@/assets/icons/cards-icon/Checkout-icon.png';
-import StaffAccounts from '@/assets/icons/cards-icon/Staff-Acount-icon.png';
-import AndroidApp from '@/assets/icons/cards-icon/Android-app-icon.png';
-import AdvancedAnalytics from '@/assets/icons/cards-icon/Advance-Analysis-icon.png';
+import WebDevelopment from '@/assets/icons/service-icon/web-development-icon.png';
+import WebDesign from '@/assets/icons/service-icon/web-design-icon.png';
+import AppDevelopment from '@/assets/icons/cards-icon/Android-app-icon.png';
+import ApiDevelopment from '@/assets/icons/service-icon/api.png';
+import SEO from '@/assets/icons/service-icon/seo-icon.png';
+import DigitalMarketing from '@/assets/icons/service-icon/digital-marketing-icon.png';
 
 const ServicesSec = () => {
     const cardContent = [
         {
-            imgUrl: SiteSpeedIcon,
-            title: "Site Speed",
+            imgUrl: WebDevelopment,
+            title: "Web Development",
             textContent: "Incredibly fast storefronts. Don't take our word for it, start selling online and see it for yourself!"
         },
         {
-            imgUrl: MultiWarehouse,
-            title: "Multi-Warehouse",
+            imgUrl: WebDesign,
+            title: "Web Design",
             textContent: "One store, multiple locations. Ship products from multiple warehouses across India."
         },
         {
-            imgUrl: OptimisedCheckout,
-            title: "Optimised Checkouts",
+            imgUrl: AppDevelopment,
+            title: "App-Development",
             textContent: "Offer a seamless shopping experience optimised for checkouts "
         },
         {
-            imgUrl: StaffAccounts,
-            title: "Staff Accounts",
+            imgUrl: ApiDevelopment,
+            title: "Api Development",
             textContent: "Add employees, colleagues and teammates to help you grow your business while managing access."
         },
         {
-            imgUrl: AndroidApp,
-            title: "Android App",
+            imgUrl: SEO,
+            title: "SEO",
             textContent: "The world is mobile. It's time your store is too. Get more loyal customers with your mobile app."
         },
         {
-            imgUrl: AdvancedAnalytics,
-            title: "Advanced Analytics",
+            imgUrl: DigitalMarketing,
+            title: "Digital Marketing",
             textContent: "All the information about your sales, traffic, regions and products, just a single click away."
         }
     ];

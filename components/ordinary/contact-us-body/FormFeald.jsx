@@ -51,7 +51,7 @@ const FormFeald = () => {
   };
   return (
 
-    <form onSubmit={handleSubmit} className="emailForm bg-white">
+    <form onSubmit={handleSubmit} className="emailForm">
       <div className="mt-4">
         <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
           Your Name

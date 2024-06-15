@@ -1,19 +1,17 @@
 import { React } from 'react';
 import Image from 'next/image';
-import amazonReview from '@/assets/images/Dedicated-Image/site-functionality-img/amazon-review-importer.svg';
-import clarity from '@/assets/images/Dedicated-Image/site-functionality-img/clarity.svg';
-import shopifyImporter from '@/assets/images/Dedicated-Image/site-functionality-img/shopify-importer.svg';
-import facebook from '@/assets/images/Dedicated-Image/site-functionality-img/facebook.svg';
-import googleAds from '@/assets/images/Dedicated-Image/site-functionality-img/google-ads.svg';
-import googleAnalytic from '@/assets/images/Dedicated-Image/site-functionality-img/google-analytic.svg';
-import googleMerchant from '@/assets/images/Dedicated-Image/site-functionality-img/google-merchant.svg';
-import trusted from '@/assets/images/Dedicated-Image/site-functionality-img/trusted.svg';
-import intercom from '@/assets/images/Dedicated-Image/site-functionality-img/intercom.svg';
-import mailchimp from '@/assets/images/Dedicated-Image/site-functionality-img/mailchimp.svg';
-import privy from '@/assets/images/Dedicated-Image/site-functionality-img/privy.svg';
-import rtoOptimizer from '@/assets/images/Dedicated-Image/site-functionality-img/rto-optimizer.svg';
-
-
+import javascript from '@/assets/icons/technology-icon/javascript.png';
+import reactJs from '@/assets/icons/technology-icon/react-js.png';
+import nodeJs from '@/assets/icons/technology-icon/node-js.png';
+import expressJs from '@/assets/icons/technology-icon/express.png';
+import nextJs from '@/assets/icons/technology-icon/next-js.png';
+import typeScript from '@/assets/icons/technology-icon/typescript.png';
+import mongoDb from '@/assets/icons/technology-icon/mongo-db.png';
+import python from '@/assets/icons/technology-icon/python.png';
+import java from '@/assets/icons/technology-icon/java.png';
+import tailwind from '@/assets/icons/technology-icon/tailwind.png';
+import ruby from '@/assets/icons/technology-icon/ruby.png';
+import angular from '@/assets/icons/technology-icon/angular.png';
 
 
 
@@ -29,73 +27,73 @@ const SiteFunctionality = () => {
          <div className='flex flex-row'>
             <button className='transition-transform hover:scale-110'>
             <div className='relative lg:mx-2 md:mx-1 bottom-2 hover:rounded-md' data-aos="fade-down">
-               <Image src={amazonReview} alt='rto-optimizer' width={200} height={200} />
+               <Image src={nextJs} alt='rto-optimizer' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative top-10 lg:mx-2 md:mx-1 hover:rounded-md' data-aos="fade-up">
-               <Image src={clarity} alt='clarity' width={200} height={200} />
+               <Image src={reactJs} alt='clarity' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative top-20 lg:mx-2 md:mx-1 hover:rounded-md' data-aos="fade-up">
-               <Image src={shopifyImporter} alt='shopify-importer' width={200} height={200} />
+               <Image src={nodeJs} alt='shopify-importer' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative top-10 lg:mx-2 md:mx-1 hover:rounded-md' data-aos="fade-up">
-               <Image src={facebook} alt='facebook' width={200} height={200} />
+               <Image src={expressJs} alt='facebook' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative top-2 lg:mx-2 md:mx-1 hover:rounded-md' data-aos="fade-up">
-               <Image src={googleAds} alt='google-ads' width={200} height={200} />
+               <Image src={angular} alt='google-ads' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative bottom-5 lg:mx-2 md:mx-1 hover:rounded-md' data-aos="fade-up">
-               <Image src={googleAnalytic} alt='google-analytic' width={200} height={200} />
+               <Image src={typeScript} alt='google-analytic' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative top-2 lg:mx-2 md:mx-1 hover:rounded-md' data-aos="fade-down">
-               <Image src={googleMerchant} alt='google-merchant' width={200} height={200} />
+               <Image src={javascript} alt='google-merchant' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative top-10 lg:mx-2 md:mx-1 hover:rounded-md' data-aos="fade-down">
-               <Image src={trusted} alt='trusted' width={200} height={200} />
+               <Image src={mongoDb} alt='trusted' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative top-20 lg:mx-2 md:mx-1 hover:rounded-md' data-aos="fade-down">
-               <Image src={intercom} alt='intercom' width={200} height={200} />
+               <Image src={python} alt='intercom' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative top-11 lg:mx-2 md:mx-1 hover:rounded-md' data-aos="fade-down">
-               <Image src={mailchimp} alt='mailchimp' width={200} height={200} />
+               <Image src={java} alt='mailchimp' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative top-5 lg:mx-2 md:mx-1 hover:rounded-md' data-aos="fade-down">
-               <Image src={privy} alt='privy' width={200} height={200} />
+               <Image src={tailwind} alt='privy' width={200} height={200} />
             </div>
             </button>
 
             <button className='transition-transform hover:scale-110'>
             <div className='relative lg:mx-2 md:mx-1 bottom-2 hover:rounded-md' data-aos="fade-down">
-               <Image src={rtoOptimizer} alt='rto-optimizer' width={200} height={200} />
+               <Image src={ruby} alt='rto-optimizer' width={200} height={200} />
             </div>
             </button>
          </div>
