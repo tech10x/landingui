@@ -99,7 +99,9 @@ const SiteFunctionality = () => {
          </div>
 
          <div className='mt-36 flex justify-center'>
-            <button className='py-1 px-4 lg:py-2 lg:px-8 border-2 bg-green-500 rounded-lg font-medium text-lg text-white shadow-slate-600 hover:rounded-md transition-transform hover:scale-110 hover:border-gray-400 focus:border-teal-400'>Take a look</button>
+         <button className="before:ease relative h-[50px] w-40 overflow-hidden border border-white text-blue-900 shadow-2xl transition-all before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-gradient-to-r from-blue-800 to-green-800 before:duration-300 hover:text-white hover:shadow-blue-500 hover:before:h-64 hover:before:-translate-y-32 rounded-lg font-semibold bg-white hover:border-blue-900">
+      <span className="relative z-10">Take a Look</span>
+    </button>
          </div>
 
       </div>

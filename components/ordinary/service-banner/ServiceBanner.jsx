@@ -25,10 +25,19 @@ const ServiceBanner = () => {
           <TypeWriter texts={texts} />
           </p>
           <div className="mt-12 flex flex-col md:flex-row lg:flex-row">
-            <button type='button'
-              className="bg-blue-700 rounded hover:bg-black transition-all mr-0 lg:mr-3 text-white font-bold text-medium px-5 py-3">Getting Started</button>
-      <button type='button'
-              className="bg-transparent hover:bg-[#333] hover:text-white border-2 border-[#333] transition-all font-bold text-sm rounded px-5 py-3">API documentation</button>
+
+
+          <button className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg">
+          <span className="relative z-10">Getting Started</span>
+          </button>
+
+
+
+          <button className="lg:ml-4 ml-0 mt-6 lg:mt-0 md:mt-0 md:ml-4 before:ease relative h-[50px] w-40 overflow-hidden border border-white text-blue-900 shadow-2xl transition-all before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-gradient-to-r from-blue-800 to-green-800 before:duration-300 hover:text-white hover:shadow-blue-500 hover:before:h-64 hover:before:-translate-y-32 rounded-lg font-semibold bg-white hover:border-blue-900">
+      <span className="relative z-10">Skew curtain</span>
+    </button>
+
+
           </div>
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
             <Image src={googleLogo} className="w-28 mx-auto" alt="google-logo" />

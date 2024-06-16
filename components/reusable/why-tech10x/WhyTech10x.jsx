@@ -65,7 +65,9 @@ const WhyTech10x = () => {
       </div>
     </div>
     <div className='mt-12 flex justify-center'>
-            <button className='py-1 px-4 lg:py-2 lg:px-8 border-2 bg-blue-700 rounded-lg font-medium text-lg text-white shadow-slate-600 hover:rounded-md transition-transform hover:scale-110 hover:border-gray-400 focus:border-teal-400'>Take a look</button>
+    <button className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg">
+          <span className="relative z-10">Get Api</span>
+          </button>
          </div>
   </div>
 </section>

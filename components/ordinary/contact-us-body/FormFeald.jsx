@@ -128,12 +128,10 @@ const FormFeald = () => {
           required></textarea>
       </div>
 
-      <button
-        type="submit"
-        className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
-      >
-        Send message
-      </button>
+
+      <button type="submit" className="relative flex h-[50px] w-full mt-4 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg">
+          <span className="relative z-10">Send message</span>
+          </button>
 
        
       <CustomAlert 

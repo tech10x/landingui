@@ -19,7 +19,9 @@ const HomeBanner = () => {
                             <p className='md:w-4/5 text-lg font-medium'>
                                 Launch your eye-catching online store with ease, attract and convert more customers than ever before.</p>
                             <div>
-                                <button className='bg-blue-700 px-14 py-2 text-white font-bold text-xl hover:bg-black transition-all ease-in duration-200 rounded'>Get Started</button>
+                            <button className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg">
+          <span className="relative z-10">Get Started</span>
+          </button>
                             </div>
                         </div>
                         {/* Right Content  */}

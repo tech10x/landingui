@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-
+import cardStyle from './CardSection.module.css';
 
 const CardSection = ({ referImg, title, content }) => {
     return (
@@ -12,11 +12,10 @@ const CardSection = ({ referImg, title, content }) => {
                         <div className='mb-4'>
                             <Image src={referImg}
                                 alt='Service-Feature'
-                                quality={70}
                                 loading="lazy"
                                 height={100}
                                 width={100}
-                                className='hover:rounded-md transition-transform hover:scale-110' />
+                                className={`hover:rounded-full ${cardStyle.gooey}`} />
                         </div>
                         <h2 className="text-gray-900 dark:text-white text-xl font-medium">{title}</h2>
                     </div>

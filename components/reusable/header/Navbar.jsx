@@ -133,12 +133,10 @@ const NavigationMenu = () => {
             </ul>
 
             {/* Start free button  */}
-            <button
-              type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 btn"
-            >
-              Get Started
-            </button>
+            <button type="button"
+            className="relative 2xl:flex xl:flex lg:flex md:hidden h-[50px] w-40 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg hidden">
+          <span className="relative z-10">Get Started</span>
+          </button>
 
             {/* Menu close button for mobile device  */}
             <div className={"md:hidden"}>

@@ -18,7 +18,9 @@ const ProjectHomeBanner = async () => {
                         <p className='md:w-4/5 text-lg font-medium'>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex pariatur animi quas eligendi temporibus labore autem dolorum.</p>
                         <div>
-                                <a href='#allProjects' className='bg-blue-700 px-14 py-2 text-white font-bold text-xl hover:bg-black transition-all ease-in duration-200 rounded'>Get Started</a>
+                                <a href='#allProjects' className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg">
+                               <span className="relative z-10">Get Started</span>
+                               </a>
                             </div>
                     </div>
                     {/* Right Content  */}

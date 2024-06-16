@@ -2,15 +2,16 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import bulletPoint from "@/assets/icons/green-tick-1.png";
-import htmlIcon from "@/assets/icons/Technology-icons/HTML.webp";
-import tailwindIcon from "@/assets/icons/Technology-icons/tailwind-icon.png";
-import javascriptIcon from "@/assets/icons/Technology-icons/javascript-icon.png";
-import reactjsIcon from "@/assets/icons/Technology-icons/react-js-icon.png";
-import nextjsIcon from "@/assets/icons/Technology-icons/next-js-icon.png";
-import nodejsIcon from "@/assets/icons/Technology-icons/node-js-icon.png";
-import expressjsIcon from "@/assets/icons/Technology-icons/express-icon.png";
-import mongodbIcon from "@/assets/icons/Technology-icons/mongodb-icon.png";
+import htmlIcon from "@/assets/icons/technology-icon/html.png";
+import tailwindIcon from "@/assets/icons/technology-icon/tailwind.png";
+import javascriptIcon from "@/assets/icons/technology-icon/javascript.png";
+import reactjsIcon from "@/assets/icons/technology-icon/react-js.png";
+import nextjsIcon from "@/assets/icons/technology-icon/next-js.png";
+import nodejsIcon from "@/assets/icons/technology-icon/node-js.png";
+import expressjsIcon from "@/assets/icons/technology-icon/express.png";
+import mongodbIcon from "@/assets/icons/technology-icon/mongo-db.png";
 import { SiGoogleforms } from "react-icons/si";
+import techBlobBg from './Blob.module.css';
 const SingleProjectContent = ({
   projectName,
   thumbnail1,
@@ -228,20 +229,21 @@ const SingleProjectContent = ({
               </ul>
 
               {isClick === 1 ? (
-                <ul className="mt-4">
+                <ul className="grid grid-cols-2 lg:grid-cols-3 mt-4">
                   {technologies.map((technology) => (
                     <li
                       key={technology.name}
-                      className="inline-flex items-center my-6"
+                      className="flex flex-col items-center my-6"
                     >
                       <Image
                         src={technology.icon}
                         alt={technology.name}
-                        height={30}
-                        width={30}
-                        className="ml-4"
+                        height={25}
+                        width={25}
+                        quality={100}
+                        className={`ml-4 ${techBlobBg.gooey}`}
                       />
-                      <h6 className="ml-2">{technology.name}</h6>
+                      <h6 className="ml-2 mt-2 font-semibold text-gray-600">{technology.name}</h6>
                     </li>
                   ))}
                 </ul>

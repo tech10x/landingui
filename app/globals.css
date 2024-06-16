@@ -80,7 +80,7 @@
     }
 }
 
-
+/* Background floating animation  */
 .globalImageAndIconAnimation{
     box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.1);
     animation: animate 5s ease-in-out infinite;
@@ -94,3 +94,24 @@
     }
     
 }
+
+/* object updown animation  */
+
+.letsUpDown{
+    animation: updown 5s ease infinite;
+    transition: all .3s; 
+}
+@keyframes updown {
+    0%{
+       transform: translateY(0px);
+    }50%{
+        transform: translateY(-6px);
+    }100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+
+
+ 

@@ -36,11 +36,17 @@ const ProjectCard = ({ imageSource, title, siteUrl, dynamicLink }) => {
 
                     <h3 className="pt-1 pb-2 text-xl font-bold text-black"> {title} </h3>
 
-                    <a href={siteUrl} target='blank' className='py-1 px-2 lg:py-2 lg:px-8 border-2 rounded-lg bg-blue-400 font-medium text-lg text-white shadow-slate-600 hover:rounded-md transition-transform hover:scale-90 hover:border-gray-400 focus:border-teal-400 flex justify-center'>Preview</a>
 
-                   <button onClick={handleRedirectLoading}>
-                    <Link href={`/projects/${dynamicLink}`} className='py-1 px-2 lg:py-2 mt-2 lg:px-8 border-2  bg-green-800 rounded-lg font-medium text-lg text-white shadow-slate-600 hover:rounded-md transition-transform hover:scale-90 hover:border-gray-400 focus:border-teal-400 flex justify-center'>View Project</Link>
-                    </button>
+
+                    <a href={siteUrl} target='blank' className="relative flex h-[50px] w-full mb-2 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg ">
+                     <span className="relative z-10">Preview</span>
+                     </a>
+
+
+                    <button onClick={handleRedirectLoading}
+                     className="before:ease relative h-[50px] w-full overflow-hidden border border-white text-blue-900 shadow-2xl transition-all before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-gradient-to-r from-blue-800 to-green-800 before:duration-300 hover:text-white hover:shadow-blue-500 hover:before:h-64 hover:before:-translate-y-32 rounded-lg font-semibold bg-white hover:border-blue-900">
+                     <Link href={`/projects/${dynamicLink}`} className="relative z-10">View Project</Link>
+                     </button>
                 </div>
             </div>
         </div>
