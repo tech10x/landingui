@@ -1,11 +1,11 @@
 import CardSection from '@/components/reusable/card-section/CardSection';
 import React from 'react';
-import WebDevelopment from '@/assets/icons/service-icon/web-development-icon.png';
-import WebDesign from '@/assets/icons/service-icon/web-design-icon.png';
-import AppDevelopment from '@/assets/icons/cards-icon/Android-app-icon.png';
-import ApiDevelopment from '@/assets/icons/service-icon/api.png';
-import SEO from '@/assets/icons/service-icon/seo-icon.png';
-import DigitalMarketing from '@/assets/icons/service-icon/digital-marketing-icon.png';
+import WebDevelopment from '@/assets/icons/service-icon/web-development.png';
+import WebDesign from '@/assets/icons/service-icon/web-design.png';
+import AppDevelopment from '@/assets/icons/service-icon/app-development.png';
+import ApiDevelopment from '@/assets/icons/service-icon/api-development.png';
+import SEO from '@/assets/icons/service-icon/seo-optimization.png';
+import DigitalMarketing from '@/assets/icons/service-icon/digital-marketing.png';
 
 const ServicesSec = () => {
     const cardContent = [

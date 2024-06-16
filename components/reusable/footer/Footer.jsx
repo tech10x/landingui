@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import footerImage from "@/assets/images/Independent-image/footer-image.png";
+import footerImage from "@/assets/images/footer/footer-image.gif";
 import {
   AiFillTwitterCircle,
   AiOutlineFacebook,
