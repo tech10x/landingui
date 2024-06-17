@@ -14,10 +14,11 @@ const HomeBanner = () => {
                         {/* Left Content  */}
                         <div className='lg:w-1/2 space-y-8 h-full pt-28'>
                             <h2 className='text-2xl lg:text-4xl font-bold leading-snug lg:leading-[3.5rem] text-black'>
-                                Your Global Commerce Partner,
-                                <span className='text-blue-700'> Engineered for Peak Performance</span></h2>
-                            <p className='md:w-4/5 text-lg font-medium'>
-                                Launch your eye-catching online store with ease, attract and convert more customers than ever before.</p>
+                            Transform Your Business,
+                                <span className='text-blue-700'> Enhance Your Operations, Achieve Success.</span></h2>
+                            <p className='md:w-4/5 text-md font-medium'>
+                            We offer tailored digital solutions for everyone: startups, SMBs, enterprises, and individuals. Leverage our advanced tech expertise to improve operations, optimize processes, and maximize IT investments.
+                            </p>
                             <div>
                             <button className="relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg">
           <span className="relative z-10">Get Started</span>

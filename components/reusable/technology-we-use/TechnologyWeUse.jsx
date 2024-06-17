@@ -66,9 +66,9 @@ const TechnologyWeUse = ({
               heard of them.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 lg:gap-12">
-            {items.map((item) => (
-              <div key={item}>{item}</div>
+          <div className="grid w-1/2 mx-auto grid-cols-1 gap-4 md:w-full sm:w-full lg:w-full lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 lg:gap-12">
+            {items.map((item, index) => (
+              <div key={index}>{item}</div>
             ))}
           </div>
         </div>

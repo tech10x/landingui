@@ -12,39 +12,39 @@ const ServicesSec = () => {
         {
             imgUrl: WebDevelopment,
             title: "Web Development",
-            textContent: "Incredibly fast storefronts. Don't take our word for it, start selling online and see it for yourself!"
+            textContent: "We create incredibly fast and responsive websites that enhance your online presence and user experience across all platforms."
         },
         {
             imgUrl: WebDesign,
             title: "Web Design",
-            textContent: "One store, multiple locations. Ship products from multiple warehouses across India."
+            textContent: "Our team designs visually appealing and user-friendly websites that ensure a seamless browsing experience for all users."
         },
         {
             imgUrl: AppDevelopment,
             title: "App-Development",
-            textContent: "Offer a seamless shopping experience optimised for checkouts "
+            textContent: "We develop high-quality mobile and web applications that provide a smooth and engaging user experience, tailored to your business needs."
         },
         {
             imgUrl: ApiDevelopment,
             title: "Api Development",
-            textContent: "Add employees, colleagues and teammates to help you grow your business while managing access."
+            textContent: "Our API development services enable seamless integration and efficient management of data and access for employees and partners, enhancing your business operations."
         },
         {
             imgUrl: SEO,
             title: "SEO",
-            textContent: "The world is mobile. It's time your store is too. Get more loyal customers with your mobile app."
+            textContent: "We optimize your website for search engines to increase visibility, attract more visitors, and drive higher engagement and conversion rates."
         },
         {
             imgUrl: DigitalMarketing,
             title: "Digital Marketing",
-            textContent: "All the information about your sales, traffic, regions and products, just a single click away."
+            textContent: "Our digital marketing strategies provide comprehensive insights into your website's performance, helping you make data-driven decisions and achieve your business goals."
         }
     ];
     return (
         <section className='bg-green-50 pb-12 pt-2 mt-8'>
             <div className='flex flex-col text-center my-16'>
-                <h5 className='text-2xl font-bold lg:text-4xl md:text-3xl'>E-commerce Simplified, Success Amplified</h5>
-                <h6 className='text-[0.9rem] lg:text-[1.3rem] md:text-[1rem] font-medium text-gray-500 mt-4'>Empowering your online business growth with all the essential tools.</h6>
+                <h5 className='text-2xl font-bold lg:text-4xl md:text-3xl'>Unleash Your Business Potential with Our Expert Services</h5>
+                <h6 className='text-[0.9rem] lg:text-[1.3rem] md:text-[1rem] font-medium text-gray-500 mt-4'>Grow your online presence with our comprehensive suite of services.</h6>
             </div>
 
             {/* Card Items  */}
