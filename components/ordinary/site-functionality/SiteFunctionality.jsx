@@ -19,8 +19,10 @@ const SiteFunctionality = () => {
     return (
       <div className='bg-green-50 mt-12 pb-36 pt-2'>
          <div className='flex flex-col text-center my-24 mx-12 lg:mx-36 md:mx-28'>
-            <h5 className='text-2xl font-bold lg:text-4xl md:text-3xl'>Enhance your sites functionality with plugins</h5>
-            <h6 className='text-[0.9rem] lg:text-[1.3rem] md:text-[1rem] font-medium text-gray-500 mt-4'>Choose from over 40+ plugins. Be it tracking analytics, managing shipments to building email lists. Theres a plugin for everything.</h6>
+            <h5 className='text-2xl font-bold lg:text-4xl md:text-3xl'>Transform Your Vision into Reality with Our Integrated Software Solutions</h5>
+            <h6 className='text-[0.9rem] lg:text-[1.3rem] md:text-[1rem] font-medium text-gray-500 mt-4'>
+            Discover the art of possibility as we bring innovation, efficiency, and scalability to every facet of your digital landscape.
+            </h6>
          </div>
 
 

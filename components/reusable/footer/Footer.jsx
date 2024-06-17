@@ -11,15 +11,15 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-white lg:grid lg:grid-cols-5 mt-28 border-[1px] border-gray-200">
-      <div className="relative block h-32 lg:col-span-2 lg:h-full">
+      <div className="relative block h-56 md:h-96 lg:col-span-2 lg:h-full">
         <Image
           src={footerImage}
           alt="Programming-image"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full lg:h-4/5 lg:w-4/5 object-cover"
         />
       </div>
 
-      <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+      <div className="px-4 py-8 sm:px-6 lg:col-span-3 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div>
             <p>
@@ -117,7 +117,7 @@ const Footer = () => {
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
-                    1on1 Coaching{" "}
+                    Web Development{" "}
                   </a>
                 </li>
 
@@ -127,7 +127,7 @@ const Footer = () => {
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
-                    Company Review{" "}
+                    Web Design{" "}
                   </a>
                 </li>
 
@@ -137,7 +137,7 @@ const Footer = () => {
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
-                    Accounts Review{" "}
+                    Api Development{" "}
                   </a>
                 </li>
 
@@ -147,7 +147,7 @@ const Footer = () => {
                     className="text-gray-700 transition hover:opacity-75"
                   >
                     {" "}
-                    HR Consulting{" "}
+                    Digital Marketing{" "}
                   </a>
                 </li>
 
@@ -158,6 +158,33 @@ const Footer = () => {
                   >
                     {" "}
                     SEO Optimisation{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    App Development{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Software Maintenance{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    CMS Solution{" "}
                   </a>
                 </li>
               </ul>
@@ -201,7 +228,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-100 pt-12">
+        <div className="mt-12 border-t border-gray-100 pt-4">
           <div className="sm:flex sm:items-center sm:justify-between">
             <ul className="flex flex-wrap gap-4 text-xs">
               <li>

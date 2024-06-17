@@ -16,7 +16,9 @@ const HeroRight = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, 
                         <Image
                             alt={title}
                             src={referredImg}
-                            quality={70}
+                            quality={100}
+                            height={300}
+                            width={300}
                             loading="lazy"
                             className="absolute inset-0 h-full w-full object-cover"
                         />

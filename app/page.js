@@ -1,8 +1,8 @@
 import React from 'react';
 import HomeBanner from '@/components/ordinary/home-banner/HomeBanner.jsx';
 import Marquee from '@/components/ordinary/marquee/Marquee';
-import launchFastImg from '@/assets/images/home-page/hero-section/achive-bussness-goal.gif';
-import scaleFasterImg from '@/assets/images/home-page/hero-section/get-dashboadrd.gif';
+import launchFastImg from '@/assets/images/home-page/hero-section/launch-fast-hero-illustration.svg';
+import scaleFasterImg from '@/assets/images/home-page/hero-section/business-presentation.png';
 import manageBetterImg from '@/assets/images/home-page/hero-section/get-more-reach.gif';
 import firstHeroBulletIcon from '@/assets/icons/bullet-icon/star-1.gif';
 import secondHeroBulletIcon from '@/assets/icons/bullet-icon/star-2.gif';
@@ -32,27 +32,27 @@ const Home = () => {
 
 
       <HeroLeft referredImg={launchFastImg} title={"Launch Fast"}
-        itemOne={"Fully responsive e-commerce website & mobile app."}
-        itemTwo={"Loads 6X faster than existing solutions."}
-        itemThree={"Upload/import products and inventory in bulk."}
-        itemFour={"Integrate payment gateways."}
-        itemFive={"Easily customizable themes."}
+        itemOne={"Build responsive websites and mobile apps."}
+        itemTwo={"Ensure 10X faster loading times."}
+        itemThree={"Easily bulk upload and import content."}
+        itemFour={"Integrate with payment gateways and APIs."}
+        itemFive={"Effortlessly customize themes."}
         bulletPoint={firstHeroBulletIcon} />
 
       <HeroRight referredImg={scaleFasterImg} title={"Scale Faster"}
-        itemOne={"Guaranteed 99.5% uptime for your store - We keep you open for business."}
-        itemTwo={"60+ third party plugins."}
-        itemThree={"Marketing tools and discounts to drive repeat orders."}
-        itemFour={"Add staff accounts, assign different roles."}
-        itemFive={"Unlimited transactions, minimal transaction fees."}
+        itemOne={"Guarantee 99.6% uptime for your site."}
+        itemTwo={"Utilize over 50+ third-party plugins and integrations."}
+        itemThree={"Boost engagement with marketing tools and analytics."}
+        itemFour={"Manage user accounts with defined roles."}
+        itemFive={"Process unlimited transactions with low fees."}
         bulletPoint={secondHeroBulletIcon} />
 
       <HeroLeft referredImg={manageBetterImg} title={"Manage Better"}
-        itemOne={"Order tracking, invoicing and order reports."}
-        itemTwo={"Bulk edit product prices, variants, inventory."}
-        itemThree={"Manage global deliveries."}
-        itemFour={"In-depth business analytics."}
-        itemFive={"Automate all tax calculations."}
+        itemOne={"Track orders, handle invoicing, and generate reports."}
+        itemTwo={"Edit content, prices, and inventory in bulk."}
+        itemThree={"Manage global operations and deliveries smoothly."}
+        itemFour={"Access in-depth business analytics."}
+        itemFive={"Maintain security and compliance standards."}
         bulletPoint={thridHeroBulletIcon} />
 
       <ServicesSec />
