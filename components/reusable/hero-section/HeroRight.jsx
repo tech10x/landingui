@@ -10,17 +10,18 @@ const HeroRight = ({ referredImg, title, itemOne, itemTwo, itemThree, itemFour, 
 
     return (
         <section>
-            <div className="mx-auto max-w-screen px-4 py-8 sm:px-6 pb-0 sm:pb-12 lg:px-8 lg:py-2">
+            <div className="mx-auto max-w-screen px-4 py-8 sm:px-6 pb-0 sm:pb-12 lg:px-8 lg:py-2 md:mx-auto ">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-                    <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full" data-aos="flip-left">
+                    <div className="relativeh-64 overflow-hidden sm:h-80 md:h-96 md:w-full lg:h-full my-auto lg:order-last" data-aos="flip-left">
+                    
                         <Image
                             alt={title}
                             src={referredImg}
                             quality={100}
-                            height={300}
-                            width={300}
+                            height={400}
+                            width={400}
                             loading="lazy"
-                            className="absolute inset-0 h-full w-full object-cover"
+                            className="inset-0 object-cover mx-auto block sm:mx-auto md:mx-auto lg:mx-0"
                         />
                     </div>
 
