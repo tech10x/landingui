@@ -12,6 +12,7 @@ import java from '@/assets/icons/technology-icon/java.png';
 import tailwind from '@/assets/icons/technology-icon/tailwind.png';
 import ruby from '@/assets/icons/technology-icon/ruby.png';
 import angular from '@/assets/icons/technology-icon/angular.png';
+import Link from 'next/link';
 
 
 
@@ -101,9 +102,11 @@ const SiteFunctionality = () => {
          </div>
 
          <div className='mt-36 flex justify-center'>
+         <Link href={'/services'}>
          <button className="before:ease relative h-[50px] w-40 overflow-hidden border border-white text-blue-900 shadow-2xl transition-all before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-gradient-to-r from-blue-800 to-green-800 before:duration-300 hover:text-white hover:shadow-blue-500 hover:before:h-64 hover:before:-translate-y-32 rounded-lg font-semibold bg-white hover:border-blue-900">
       <span className="relative z-10">Take a Look</span>
     </button>
+    </Link>
          </div>
 
       </div>

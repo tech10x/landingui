@@ -16,7 +16,6 @@ const dataFlow = projectData.project;
 
   return (
     <div className='mb-0'> 
-    
     <SingleProjectContent 
     projectName ={dataFlow.title}
     thumbnail1={dataFlow.thumbNail}

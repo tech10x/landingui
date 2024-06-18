@@ -48,10 +48,7 @@ const ServicesSec = () => {
             </div>
 
             {/* Card Items  */}
-            <div className="flex flex-wrap justify-center 
-            mt-10 2xl:grid 2xl:grid-cols-3 min-[1488px]:grid-cols-2 min-[1896px]:mx-96 
-            2xl:mx-48 min-[1600px]:mx-60 min-[1800px]:mx-80 
-            min-[2000px]:mx-48 min-w-[1343px]:mx-48 max-[13px]:mx-48 xl:mx-28">
+            <div className="grid gap-4 mx-auto grid-cols-1 sm:grid-cols-1 sm:mx-auto md:grid-cols-2 md:mx-12 md:gap-4 lg:grid-cols-3 lg:mx-12 2xl:mx-28 2xl:gap-2">
 
                 {
                     cardContent.map(({ imgUrl, title, textContent }) =>

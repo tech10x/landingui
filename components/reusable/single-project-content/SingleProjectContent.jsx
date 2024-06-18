@@ -12,6 +12,7 @@ import expressjsIcon from "@/assets/icons/technology-icon/express.png";
 import mongodbIcon from "@/assets/icons/technology-icon/mongo-db.png";
 import { SiGoogleforms } from "react-icons/si";
 import techBlobBg from './Blob.module.css';
+import Link from "next/link";
 const SingleProjectContent = ({
   projectName,
   thumbnail1,
@@ -200,13 +201,13 @@ const SingleProjectContent = ({
               </ul>
 
               <div className="mt-10 flex flex-wrap gap-4">
-                <button
-                  type="button"
-                  className="flex items-center justify-center px-8 py-2 bg-blue-800 hover:bg-gray-900 text-white shadow-xl text-base rounded"
-                >
-                  <SiGoogleforms className="w-5 h-5 cursor-pointer fill-current inline mr-3" />
-                  Enroll Now
-                </button>
+                <Link
+                        href='/contact'
+                        className="relative flex h-[50px] w-full mb-2 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg "
+                      >
+                        <span className="relative z-10 inline-flex">  <SiGoogleforms className="w-5 h-5 cursor-pointer fill-current inline-flex mr-3
+                  " />Enroll Now</span>
+                      </Link>
               </div>
 
               <ul className="grid grid-cols-2 mt-10">

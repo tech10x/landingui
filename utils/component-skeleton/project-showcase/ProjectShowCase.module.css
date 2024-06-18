@@ -1,5 +1,6 @@
 .body {
     position: fixed;
+    z-index: 9999;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;

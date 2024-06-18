@@ -2,7 +2,7 @@ import React from 'react';
 import HomeBanner from '@/components/ordinary/home-banner/HomeBanner.jsx';
 import Marquee from '@/components/ordinary/marquee/Marquee';
 import launchFastImg from '@/assets/images/home-page/hero-section/launch-fast-hero-illustration.svg';
-import scaleFasterImg from '@/assets/images/home-page/hero-section/scale-up-your-business.svg';
+import scaleFasterImg from '@/assets/images/home-page/hero-section/scale-faster.svg';
 import manageBetterImg from '@/assets/images/home-page/hero-section/manage-better-image.svg';
 import firstHeroBulletIcon from '@/assets/icons/bullet-icon/star-1.gif';
 import secondHeroBulletIcon from '@/assets/icons/bullet-icon/star-2.gif';
@@ -15,6 +15,7 @@ import SiteFunctionality from '@/components/ordinary/site-functionality/SiteFunc
 import Testimonial from '@/components/ordinary/testimonial/Testimonial';
 import Projects from '@/components/ordinary/projects/Projects';
 import EarthAnimation from '@/components/ordinary/earth-animation/EarthAnimation';
+import Image from 'next/image';
 
 
 
@@ -63,6 +64,7 @@ const Home = () => {
       <Testimonial />
 
       <EarthAnimation />
+
     </>
   )
 }

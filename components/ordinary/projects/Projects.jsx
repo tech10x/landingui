@@ -14,7 +14,7 @@ const Projects = async ({sliceFrom, sliceTo}) => {
                 <h5 className='text-2xl font-bold lg:text-4xl md:text-3xl'>Our Innovation, Our Work</h5>
                 <h6 className='text-[0.9rem] lg:text-[1.3rem] md:text-[1rem] font-medium text-gray-500 mt-4'>The seeds of your Business Growth</h6>
             </div>
-            <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 mx-12 sm:mx-20 md:mx-28 xl:mx-36'>
+            <div className='grid gap-4 mx-auto grid-cols-1 sm:grid-cols-1 sm:mx-auto md:grid-cols-2 md:mx-12 md:gap-4 lg:grid-cols-3 lg:mx-12 2xl:mx-28 2xl:gap-2'>
 
 
                 {

@@ -7,8 +7,6 @@ import { MdSegment } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import SideHeader from "./SideHeader";
 
-
-
 const NavigationMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -102,7 +100,7 @@ const NavigationMenu = () => {
               className={
                 "text-2xl font-bold text-black flex items-center gap-2"
               }
-              >
+            >
               <Image
                 src={brandLogo}
                 alt="Tech10x logo"
@@ -116,9 +114,10 @@ const NavigationMenu = () => {
             </Link>
 
             {/* Nav item for large device  */}
-            <ul className={"md:flex space-x-12 hidden"} >
+            <ul className={"md:flex space-x-12 hidden"}>
               {navItems.map(({ link, path }) => (
-                <Link prefetch={true}
+                <Link
+                  prefetch={true}
                   key={path}
                   href={path}
                   className={`block text-sm align-center
@@ -133,10 +132,12 @@ const NavigationMenu = () => {
             </ul>
 
             {/* Start free button  */}
-            <button type="button"
-            className="relative 2xl:flex xl:flex lg:flex md:hidden h-[50px] w-40 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg hidden">
-          <span className="relative z-10">Get Started</span>
-          </button>
+            <Link
+            href={'/contact'}
+              className="relative 2xl:flex xl:flex lg:flex md:hidden h-[50px] w-40 items-center justify-center overflow-hidden bg-gradient-to-r from-blue-800 to-green-800 text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white font-semibold hover:text-blue-900 hover:shadow-blue-600 hover:before:border-[25px] rounded-lg hidden"
+            >
+              <span className="relative z-10">Get Started</span>
+            </Link>
 
             {/* Menu close button for mobile device  */}
             <div className={"md:hidden"}>
