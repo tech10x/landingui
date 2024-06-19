@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import brandLogo from "@/assets/icons/tech10x.webp";
+import brandLogo from "@/assets/images/Tech10x-logo.png";
 import { MdSegment } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import SideHeader from "./SideHeader";
@@ -98,19 +98,18 @@ const NavigationMenu = () => {
             <Link
               href="/"
               className={
-                "text-2xl font-bold text-black flex items-center gap-2"
+                "flex items-center gap-2"
               }
             >
               <Image
                 src={brandLogo}
                 alt="Tech10x logo"
-                height={60}
-                width={60}
+                height={100}
+                width={200}
                 className={"inline-block"}
                 loading="eager"
                 priority={true}
               />
-              Tech10x
             </Link>
 
             {/* Nav item for large device  */}
@@ -122,7 +121,7 @@ const NavigationMenu = () => {
                   href={path}
                   className={`block text-sm align-center
                                  text-black uppercase cursor-pointer
-                                 hover:text-blue-800 font-bold ${
+                                 hover:text-blue-900 font-bold ${
                                    isActive(path) ? "link-active" : ""
                                  }`}
                 >
@@ -145,7 +144,7 @@ const NavigationMenu = () => {
                 {isMenuOpen ? (
                   ""
                 ) : (
-                  <MdSegment className="text-5xl font-extrabold hover:transition-transform hover:scale-110" />
+                  <MdSegment className="text-5xl font-extrabold hover:transition-transform hover:scale-110 hover:text-blue-900" />
                 )}
               </button>
             </div>

@@ -15,8 +15,9 @@ const HomeBanner = () => {
                 Transform Your Business,
                 <span className="text-blue-700">
                   {" "}
-                  Enhance Your Operations, Achieve Success.
-                </span>
+                  Enhance Your Operations, 
+                </span><br/>
+                Achieve Success.
               </h2>
               <p className="md:w-4/5 text-md font-medium">
                 We offer tailored digital solutions for everyone: startups,

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import brandLogo from "@/assets/icons/tech10x.webp";
+import brandLogo from "@/assets/images/Tech10x-logo.png";
 import { usePathname } from "next/navigation";
 import { BsExclamationOctagonFill } from "react-icons/bs";
 import { FaPhoneVolume } from "react-icons/fa6";
@@ -18,7 +18,7 @@ const SideHeader = ({ closeMenu }) => {
           className="float-right mt-2 hover:transition-transform hover:scale-110 hover:rounded-full"
           onClick={closeMenu}
         >
-          <IoCloseCircleOutline className="text-5xl font-bold" />
+          <IoCloseCircleOutline className="text-5xl font-bold hover:text-blue-900" />
         </button>
         <ul onClick={closeMenu}>
           <Link
@@ -28,18 +28,17 @@ const SideHeader = ({ closeMenu }) => {
             <Image
               src={brandLogo}
               alt="Tech10x logo"
-              height={60}
-              width={60}
+              height={100}
+              width={200}
               className={"inline-block"}
               loading="eager"
               priority={true}
             />
-            Tech10x
           </Link>
           <li>
             <Link
               prefetch={true}
-              className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${
+              className={`text-black hover:text-blue-900 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${
                 pathname === "/services" ? "link-active" : ""
               }`}
               href="/services"
@@ -51,7 +50,7 @@ const SideHeader = ({ closeMenu }) => {
           <li>
             <Link
               prefetch={true}
-              className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${
+              className={`text-black hover:text-blue-900 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${
                 pathname === "/projects" ? "link-active" : ""
               }`}
               href="/projects"
@@ -63,7 +62,7 @@ const SideHeader = ({ closeMenu }) => {
           <li>
             <Link
               prefetch={true}
-              className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${
+              className={`text-black hover:text-blue-900 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${
                 pathname === "/about" ? "link-active" : ""
               }`}
               href="/about"
@@ -75,7 +74,7 @@ const SideHeader = ({ closeMenu }) => {
           <li>
             <Link
               prefetch={true}
-              className={`text-black hover:text-blue-600 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${
+              className={`text-black hover:text-blue-900 text-sm flex items-center hover:bg-blue-50 rounded px-4 py-3 transition-all ${
                 pathname === "/contact" ? "link-active" : ""
               }`}
               href="/contact"
